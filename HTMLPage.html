@@ -3,29 +3,31 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title> This is a website </title>
+    <title> Softwarekeep </title>
     <style>
         .myDiv {
-            border: 5px outset red;
-            background-color: lightblue;
+
             text-align: center;
         }
 
-        table, th, td {
-            border: 1px solid black;
+
     </style>
 </head>
 <body>
     <header>
 
-        <h1>This is a WebSite</h1>
-        <p>An awesome website</p>
+        <h1>Softwarekeep</h1>
+        <p>Power to the PC, Service to the people.</p>
     </header>
 
     <section>
 
-        <h2>This is a heading</h2>
-        <p>This is a paragraph.</p>
+        <h2>What do we do?</h2>
+        <p>
+            SoftwareKeep provides
+            wholesale priced software
+            with year round service.
+        </p>
 
     </section>
 
@@ -33,11 +35,12 @@
     <section>
         <div class="myDiv">
 
-            <h2>This is <span style="color:blue;font-weight:bold">another</span> section</h2>
+            <h2>We offer <span style="color:blue;font-weight:bold">certified</span> software products.</h2>
 
-            <p>This is another paragraph.</p>
+            <p>Microsoft Office 2019 Home and Student.</p>
 
-            <img src="office2019hs.png" alt="office2019hs">
+            <img src="office2019hs.webp" alt="office2019hs">
+            <img src="office2019hb.webp" alt="office2019hb">
 
         </div>
 
@@ -51,14 +54,20 @@
                 <th>Price</th>
             </tr>
             <tr>
-                <td>office2019hs</td>
-                <td>$100</td>
+                <td>Microsoft Office 2019 Home and Student</td>
+                <td>$84.49</td>
             </tr>
             <tr>
-                <td>office2019hb</td>
-                <td>$200</td>
+                <td>Microsoft Office 2019 Home and Business</td>
+                <td>$128.99</td>
             </tr>
         </table>
+
+        <label for="product">Choose a product:</label>
+        <select name="product" id="product">
+            <option value="office2019hs">Microsoft Office 2019 Home and Student</option>
+            <option value="office2019hb">Microsoft Office 2019 Home and Business</option>
+        </select>
     </section>
 
     <section>
@@ -79,8 +88,35 @@
 
     </section>
 
+    <section>
+        <h5>Let us know how we can improve!</h5>
+        <form>
+            <label for="skreview">Review of Skeep:</label>
 
-        <!--text,checkbox,radio,password,email,number-->
+            <textarea id="skreview" name="skreview" rows="4" cols="50"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </section>
+
+    <ul>
+        <li>Coffee</li>
+        <li>
+            Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+    <button type="button" onclick="alert('Thanks for your purchase!')">Place Order</button>
+
+    <!--text,checkbox,radio,password,email,number-->
+    <iframe src="https://softwarekeep.com/" title="The best software company"></iframe>
 
     <footer>
         <p>
