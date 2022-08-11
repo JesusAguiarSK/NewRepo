@@ -1,0 +1,58 @@
+﻿.office2019hsPic {
+    position: absolute;
+    width: 272px;
+    height: 272px;
+    left: 396.54px;
+    top: 342px;
+    background: url(.png);
+}
+
+.office2019hs {
+    position: absolute;
+    width: 259px;
+    height: 46px;
+    left: 402.54px;
+    top: 651px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #222222;
+}
+
+.Prices {
+    position: absolute;
+    width: 109px;
+    height: 30px;
+    left: 402.54px;
+    top: 724px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    color: #222222;
+}
+
+.Add2Cart {
+    position: absolute;
+    width: 273px;
+    height: 52px;
+    left: 402.54px;
+    top: 771px;
+    background: #619FEF;
+    border-radius: 6px;
+}
+
+.BuyNow {
+    box-sizing: border-box;
+    position: absolute;
+    width: 273px;
+    height: 52px;
+    left: 402.54px;
+    top: 832px;
+    border: 1px solid #619FEF;
+    border-radius: 6px;
+}
