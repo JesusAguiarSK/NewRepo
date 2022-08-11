@@ -7,6 +7,19 @@
     background: url(.png);
 }
 
+
+.appsContainer {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
 .office2019hs {
     position: absolute;
     width: 259px;
