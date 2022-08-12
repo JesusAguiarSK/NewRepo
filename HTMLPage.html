@@ -10,41 +10,39 @@
             text-align: center;
         }
 
-
     </style>
 </head>
+
 <body>
     <header>
-
         <h1>Softwarekeep</h1>
         <p>Power to the PC, Service to the people.</p>
     </header>
 
-    <section>
+    <h2>What do we do?</h2>
+    <p>
+        SoftwareKeep provides
+        wholesale priced software
+        with year round service.
+    </p>
 
-        <h2>What do we do?</h2>
-        <p>
-            SoftwareKeep provides
-            wholesale priced software
-            with year round service.
-        </p>
+    <ul>
+        <li>Instant Digital Download</li>
+        <li>Lifetime Product Guarantee</li>
+        <li>Year Round Service</li>
+    </ul>
 
-    </section>
+    <div class="myDiv">
 
+        <h2>We offer <span style="color:blue;font-weight:bold">certified</span> software products.</h2>
 
-    <section>
-        <div class="myDiv">
+        <p>Microsoft Office 2019 Home and Student</p>
+        <p>Microsoft Office 2019 Home and Business</p>
 
-            <h2>We offer <span style="color:blue;font-weight:bold">certified</span> software products.</h2>
+        <img src="office2019hs.webp" alt="office2019hs">
+        <img src="office2019hb.webp" alt="office2019hb">
 
-            <p>Microsoft Office 2019 Home and Student.</p>
-
-            <img src="office2019hs.webp" alt="office2019hs">
-            <img src="office2019hb.webp" alt="office2019hb">
-
-        </div>
-
-    </section>
+    </div>
 
     <section>
         <h3>Products available</h3>
@@ -61,62 +59,49 @@
                 <td>Microsoft Office 2019 Home and Business</td>
                 <td>$128.99</td>
             </tr>
-        </table>
+        </table><br><br>
+
+
 
         <label for="product">Choose a product:</label>
         <select name="product" id="product">
             <option value="office2019hs">Microsoft Office 2019 Home and Student</option>
             <option value="office2019hb">Microsoft Office 2019 Home and Business</option>
-        </select>
-    </section>
+        </select><br><br>
 
-    <section>
-        <h4>Enter your information</h4>
-        <form>
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd">
-
-            <input type="checkbox" id="Terms" name="Terms" value="Agree">
-            <label for="Terms"> I accept the Terms of Service </label><br>
-
-            <input type="submit">
-
-        </form>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100">
 
     </section>
 
-    <section>
-        <h5>Let us know how we can improve!</h5>
-        <form>
-            <label for="skreview">Review of Skeep:</label>
+    <h3>Payment information</h3>
+    <form>
 
-            <textarea id="skreview" name="skreview" rows="4" cols="50"></textarea>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
 
-            <input type="submit" value="Submit">
+        <label for="email">Paypal Email :</label>
+        <input type="email" id="email" name="email"><br><br>
 
-        </form>
+        <input type="checkbox" id="Terms" name="Terms" value="Agree">
+        <label for="Terms"> I accept the Terms of Service </label><br><br>
 
-    </section>
+        <button type="button" onclick="alert('Thanks for your purchase!')">Place Order</button>
 
-    <ul>
-        <li>Coffee</li>
-        <li>
-            Tea
-            <ul>
-                <li>Black tea</li>
-                <li>Green tea</li>
-            </ul>
-        </li>
-        <li>Milk</li>
-    </ul>
+    </form>
 
-    <button type="button" onclick="alert('Thanks for your purchase!')">Place Order</button>
+    <h3>Let us know how we can improve!</h3>
+    <form>
 
-    <!--text,checkbox,radio,password,email,number-->
-    <iframe src="https://softwarekeep.com/" title="The best software company"></iframe>
+        <textarea id="skreview" name="skreview" rows="4" cols="50"></textarea><br><br>
+        <button type="button" onclick="alert('Thanks for your feedvack!')">Submit Review</button>
+
+    </form><br><br>
+
+    <h6>Terms of service</h6>
+    <iframe src="https://softwarekeep.com/terms-and-conditions" title="Terms of Service"></iframe>
 
     <footer>
         <p>
