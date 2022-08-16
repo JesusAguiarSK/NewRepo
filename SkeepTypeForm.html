@@ -99,7 +99,24 @@
         <p>“Power to the PC and Servïce to the people.”</p>
     </section><!--values -->
 
+    <h4>Want to get in touch?</h4>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" />
 
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br><br>
+
+        <textarea id="skreview" name="skreview" rows="4" cols="50"></textarea><br><br>
+
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <button type="button" onclick="alert('Thanks for your feedback!')">Submit Review</button>
+
+    </form>
 
     <footer>
         <p>© SoftwareKeep 2022 | All right reserved</p>
