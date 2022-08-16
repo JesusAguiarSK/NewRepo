@@ -5,7 +5,19 @@
     <meta charset="utf-8" />
     <title>Softwarekeep type form</title>
     <link rel="icon" type="image/x-icon" href="images/SKLogo.ico">
+    
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
+    </style>
 </head>
 
 <body>
@@ -89,15 +101,10 @@
         </tr><!--word2019 -->
     </table><!--Best Sellers -->
 
-    <h4>Our values</h4>
-
-    <aside class="left">
-        <img src="images/SKLogo.png" alt="office2021hs" />
-    </aside><!--logo -->
-
-    <section class="right">
-        <p>“Power to the PC and Servïce to the people.”</p>
-    </section><!--values -->
+    <div class="row">
+        <div class="column"><img src="images/SKLogo.png" alt="office2021hs" /></div>
+        <div class="column"><h4>Our values</h4><p>Power to the PC and Servïce to the people.</p></div>
+    </div><!--Values -->
 
     <h4>Want to get in touch?</h4>
     <form>
@@ -116,7 +123,7 @@
         </select><br><br>
         <button type="button" onclick="alert('Thanks for your feedback!')">Submit Review</button>
 
-    </form>
+    </form><!--Form -->
 
     <footer>
         <p>© SoftwareKeep 2022 | All right reserved</p>
