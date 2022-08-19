@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Softwarekeep type form</title>
+
     <link rel="icon" type="image/x-icon" href="images/SKeepLogo.ico">
     <link rel="stylesheet" type="text/css" href="./SkeepStyleTest.css" />
 
@@ -62,7 +63,7 @@
             <td>$104.99</td>
         </tr><!--mac2021hs -->
         <tr>
-            <td><img src="images/office_2021_home_and_business_pc.png" alt="office2021hb" title="office2021hb"/></td>
+            <td><img src="images/office_2021_home_and_business_pc.png" alt="office2021hb" title="office2021hb" /></td>
             <td>Microsoft Office 2021 Home and Business</td>
             <td>$214.99</td>
         </tr><!--office2021hb -->
@@ -77,7 +78,7 @@
             <td>$124.99</td>
         </tr><!--mac2019hb -->
         <tr>
-            <td><img src="images/office2019hs.png" alt="office2019hs" title="office2019hs"/></td>
+            <td><img src="images/office2019hs.png" alt="office2019hs" title="office2019hs" /></td>
             <td>Microsoft Office 2019 Home and Student </td>
             <td>$84.99</td>
         </tr><!--office2019hs -->
@@ -92,7 +93,7 @@
             <td>$79.99</td>
         </tr><!--mac2019hs -->
         <tr>
-            <td><img src="images/win10pro32_2_1.png" alt="win10pro32" title="win10pro32"/></td>
+            <td><img src="images/win10pro32_2_1.png" alt="win10pro32" title="win10pro32" /></td>
             <td>Microsoft Windows 10 Pro Edition 32-bit</td>
             <td>$94.99</td>
         </tr><!--win10pro32 -->
@@ -105,14 +106,26 @@
 
     <!--Logo and Values -->
     <div class="row">
-        <div class="column"><img src="images/SKLogo.png" alt="office2021hs" title="office2021hs"/></div>
-        <div class="column"><h4>Our values</h4><p>Power to the PC and Servïce to the people.</p></div>
+        <div class="column"><img src="images/SKLogo.png" alt="office2021hs" title="office2021hs" /></div>
+        <div class="column" id="SKvalues"><h4>Our values</h4>
+            <p>
+            Power to the PC and Servïce to the people.SoftwareKeep provides
+            wholesale priced software
+            with year round serviceWe’re here for you. Get in touch via email, telephone or chat.
+            Instant Digital Download
+            Estimated Delivery 15 minutes or less
+            Lifetime Product Guarantee
+            Buy once, use forever because you’re worth it.
+            Year Round Service
+            Our IT specialist will provide you with the answers you need
+            </p>
+        </div>
     </div>
 
     <!--Form -->
     <h4>Want to get in touch?</h4>
 
-    <form>
+    <form id="reviewForm">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" />
 
@@ -126,12 +139,12 @@
             <option value="female">Female</option>
             <option value="other">Other</option>
         </select><br><br>
-        <button type="button" onclick="alert('Thanks for your feedback!')">Submit Review</button>
-
     </form>
 
+    <button type="button" onclick="alert('Thanks for your feedback!')">Submit Review</button>
+
     <footer>
-        <p>© SoftwareKeep 2022 | All right reserved</p>
+        <p>&copy; SoftwareKeep 2022 | All right reserved</p>
     </footer>
 </body>
 </html>

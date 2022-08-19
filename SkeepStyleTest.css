@@ -3,3 +3,17 @@
     /*background-image: url("images/SKLogo.png");*/
 
     }
+
+ul {
+    line-height: 2;
+
+}
+
+#SKvalues {
+    display: block; 
+    width: 200px; 
+    margin: 0 auto; 
+    padding: 0px 80px;
+
+}
+
