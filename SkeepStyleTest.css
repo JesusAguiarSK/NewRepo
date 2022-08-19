@@ -14,6 +14,15 @@ ul {
     width: 200px; 
     margin: 0 auto; 
     padding: 0px 80px;
+    box-sizing: border-box; /* This makes the div to have no 
+                                more than 200px width */
+
 
 }
+
+
+
+
+
+
 
