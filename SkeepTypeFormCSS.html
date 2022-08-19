@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Softwarekeep type form</title>
+    <link rel="icon" type="image/x-icon" href="images/SKeepLogo.ico">
+    <link rel="stylesheet" type="text/css" href="./SkeepStyleTest.css" />
+
+    <style>
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Softwarekeep</h1>
+        <h2>SoftwareKeep provides wholesale priced software with year round service</h2>
+
+    </header>
+
+    <!--Customer Service -->
+    <h4>Meet our Customer Service team</h4>
+
+    <ul>
+        <li>Adin Buljic</li>
+        <li>Anne Limpin</li>
+        <li>Carl Lesther</li>
+        <li>Daniel Marquez</li>
+        <li>Denis Sogovic</li>
+        <li>Emir Suvalic</li>
+        <li>Eric</li>
+        <li>Jesús Aguiar</li>
+        <li>Paul dela Cruz</li>
+        <li>Pavle Jovanoski</li>
+        <li>Quir Quiñones</li>
+        <li>Ray Bryan</li>
+
+    </ul>
+
+    <!--Best Sellers -->
+    <h4>Choose between our Best Sellers</h4>
+
+    <table>
+
+        <th>Available items</th>
+        <tr>
+            <td><img src="images/office_2021_home_and_student_1.png" alt="office2021hs" title="office2021hs" /></td>
+            <td>Microsoft Office 2021 Home & Student (PC)</td>
+            <td>$114.99</td>
+        </tr><!--office2021hs -->
+        <tr>
+            <td><img src="images/office_2021_home_and_student_mac.png" alt="mac2021hs" title="mac2021hs" /></td>
+            <td>Microsoft Office 2021 Home & Student for Mac</td>
+            <td>$104.99</td>
+        </tr><!--mac2021hs -->
+        <tr>
+            <td><img src="images/office_2021_home_and_business_pc.png" alt="office2021hb" title="office2021hb"/></td>
+            <td>Microsoft Office 2021 Home and Business</td>
+            <td>$214.99</td>
+        </tr><!--office2021hb -->
+        <tr>
+            <td><img src="images/office_2021_home_and_business_mac.png" alt="mac2021hb" title="mac2021hb" /></td>
+            <td>Microsoft Office 2021 Home and Business (Mac)</td>
+            <td>$158.99</td>
+        </tr><!--mac2021hb -->
+        <tr>
+            <td><img src="images/mac2019hb_2.png" alt="mac2019hb" title="mac2019hb" /></td>
+            <td>Microsoft Office 2019 Home and Business for Mac</td>
+            <td>$124.99</td>
+        </tr><!--mac2019hb -->
+        <tr>
+            <td><img src="images/office2019hs.png" alt="office2019hs" title="office2019hs"/></td>
+            <td>Microsoft Office 2019 Home and Student </td>
+            <td>$84.99</td>
+        </tr><!--office2019hs -->
+        <tr>
+            <td><img src="images/office2019hb_2.png" alt="office2019hb" title="office2019hb" /></td>
+            <td>Microsoft Office 2019 Home and Business</td>
+            <td>$128.99</td>
+        </tr><!--office2019hb -->
+        <tr>
+            <td><img src="images/mac2019hs_2_1.png" alt="mac2019hs" title="mac2019hs" /></td>
+            <td>Microsoft Office 2019 Home and Student for Mac</td>
+            <td>$79.99</td>
+        </tr><!--mac2019hs -->
+        <tr>
+            <td><img src="images/win10pro32_2_1.png" alt="win10pro32" title="win10pro32"/></td>
+            <td>Microsoft Windows 10 Pro Edition 32-bit</td>
+            <td>$94.99</td>
+        </tr><!--win10pro32 -->
+        <tr>
+            <td><img src="images/word2019_2.png" alt="word2019" title="word2019" /></td>
+            <td>Microsoft Word 2019 for PC</td>
+            <td>$79.49</td>
+        </tr><!--word2019 -->
+    </table>
+
+    <!--Logo and Values -->
+    <div class="row">
+        <div class="column"><img src="images/SKLogo.png" alt="office2021hs" title="office2021hs"/></div>
+        <div class="column"><h4>Our values</h4><p>Power to the PC and Servïce to the people.</p></div>
+    </div>
+
+    <!--Form -->
+    <h4>Want to get in touch?</h4>
+
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br><br>
+
+        <textarea id="skreview" name="skreview" rows="4" cols="50"></textarea><br><br>
+
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <button type="button" onclick="alert('Thanks for your feedback!')">Submit Review</button>
+
+    </form>
+
+    <footer>
+        <p>© SoftwareKeep 2022 | All right reserved</p>
+    </footer>
+</body>
+</html>
