@@ -1,9 +1,23 @@
-﻿/*Review how to apply img / background image */ 
-
+﻿/*Review how to apply img / background image */
 
 ul {
     line-height: 2; /* Spacing for text */
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/*.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+*/
 
 #SKvalues {
     display: block; 
