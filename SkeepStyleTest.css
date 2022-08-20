@@ -1,12 +1,6 @@
-﻿body {
-    color: red;
-    /*background-image: url("images/SKLogo.png");*/
-
-    }
-
+﻿
 ul {
-    line-height: 2;
-
+    line-height: 2; /* Spacing for text */
 }
 
 #SKvalues {
@@ -16,13 +10,24 @@ ul {
     padding: 0px 80px;
     box-sizing: border-box; /* This makes the div to have no 
                                 more than 200px width */
-
-
 }
 
+button[name="reviewForm"]:hover {
+    border-color: blue;
+}
 
+button[name="reviewForm"]:active {
+    color: red;
+}
 
-
+/* Positions
+    Relative: set the object away 'x' pxs to the right, left, bottom
+                right from the static position. When to use?
+    Fixed: relative to the viewport, so it always stays the same, even when page is scrolled. When to use?
+    Absolute: positioned relative to the nearest positioned ancestor. When to use?
+    Sticky: positioned based on the user's scroll position.
+    
+*/
 
 
 
