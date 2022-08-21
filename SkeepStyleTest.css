@@ -1,11 +1,24 @@
-﻿/*Review how to apply img / background image */
+﻿/*Images:
+    img: html, when img is part of the content. e.g.: portfolio, statistics results, etc. It can be used:
+    If you rely on browser scaling to render an image in proportion to text size.
+    Improve performance of animations over a background.
+
+    background image: : css, when img is for asthetic purposes It can be used:
+        When doing image-replacement of text eg. paragraphs/headers. 
+        If you need to improve download times, as with CSS sprites. 
+        If you need for only a portion of the image to be visible. 
+        background-image with background-size:cover in order to stretch a background image to fill its entire window */
+
 * {
     box-sizing: border-box; /* This makes all boxes maintain the width/height,
                             regardless of the padding */
+    font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
 }
 
 ul {
-    line-height: 2; /* Spacing for text */
+    line-height: 2; /* line-height sets the height of a line box. It's commonly used to set the distance between lines of text. 
+                    On block-level elements, it specifies the minimum height of line boxes within the element. 
+                    On non-replaced inline elements, it specifies the height that is used to calculate line box heighSpacing for text */
 }
 
 .flex-container { /*Flexbox to include the logo and values divs*/
@@ -35,13 +48,15 @@ button[name="reviewForm"]:active { /* Change text color when click*/
 }
 
 /* Positions
-    Relative: set the object away 'x' pxs to the right, left, bottom
-                right from the static position. When to use?
+    Relative: set the object away 'x' pixels to the right, left, bottom
+                top from the static (default) position. When to use?
     Fixed: relative to the viewport, so it always stays the same, even when page is scrolled. When to use?
     Absolute: positioned relative to the nearest positioned ancestor. When to use?
     Sticky: positioned based on the user's scroll position.
     
 */
+
+
 
 
 
