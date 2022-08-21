@@ -52,11 +52,9 @@ button[name="reviewForm"]:active { /* Change text color when click*/
                 top from the static (default) position. When to use?
     Fixed: relative to the viewport, so it always stays the same, even when page is scrolled. When to use?
     Absolute: positioned relative to the nearest positioned ancestor. When to use?
-    Sticky: positioned based on the user's scroll position.
-    
+    Sticky: behaves like a relatively positioned element until a certain scroll point and then it acts like a fixed element. 
+            based on the user's scroll position.
 */
 
-
-
-
+sdsdsad
 
