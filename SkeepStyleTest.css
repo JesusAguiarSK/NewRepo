@@ -48,13 +48,30 @@ button[name="reviewForm"]:active { /* Change text color when click*/
 }
 
 /* Positions
+    Static: Default value. Elements render in order, as they appear in the document. 
+            Usage:
+                E.g., For simple, single-column layouts where each element must sit on top of the next one.
+
     Relative: set the object away 'x' pixels to the right, left, bottom
-                top from the static (default) position. When to use?
-    Fixed: relative to the viewport, so it always stays the same, even when page is scrolled. When to use?
-    Absolute: positioned relative to the nearest positioned ancestor. When to use?
+              top from the static (default) position. 
+            Usage:
+               E.g., when you need ot move things up based on a reference point.  
+    
+    Fixed: relative to the viewport, so it always stays the same, even when page is scrolled. 
+            Usage:
+                E.g., a chat window, a logo, etc.
+
+    Absolute: positioned relative to the nearest positioned ancestor. 
+
+            Usage: 
+                 E.g., when you need to make nested elements.
+
     Sticky: behaves like a relatively positioned element until a certain scroll point and then it acts like a fixed element. 
             based on the user's scroll position.
+
+            Usage:
+                E.g., headings in an alphabetized list.
+                
 */
 
-sdsdsad
 
