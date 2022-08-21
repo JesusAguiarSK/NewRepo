@@ -16,12 +16,14 @@ ul {
     flex: 50%;
 }
 
-.values { 
+.values {
     flex: 50%;
     display: block;
     width: 200px;
     margin: 0 auto;
     padding: 0px 80px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 button[name="reviewForm"]:hover { /* Change border color when hover*/
