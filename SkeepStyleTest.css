@@ -1,38 +1,34 @@
 ﻿/*Review how to apply img / background image */
+* {
+    box-sizing: border-box; /* This makes all boxes maintain the width/height,
+                            regardless of the padding */
+}
 
 ul {
     line-height: 2; /* Spacing for text */
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-
-/*.row {
+.flex-container { /*Flexbox to include the logo and values divs*/
     display: flex;
 }
 
-.column {
+.logo {
     flex: 50%;
 }
-*/
 
-#SKvalues {
-    display: block; 
-    width: 200px; 
-    margin: 0 auto; 
+.values { 
+    flex: 50%;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
     padding: 0px 80px;
-    box-sizing: border-box; /* This makes the div to have no 
-                                more than 200px width */
 }
 
-button[name="reviewForm"]:hover {
+button[name="reviewForm"]:hover { /* Change border color when hover*/
     border-color: blue;
 }
 
-button[name="reviewForm"]:active {
+button[name="reviewForm"]:active { /* Change text color when click*/
     color: red;
 }
 
