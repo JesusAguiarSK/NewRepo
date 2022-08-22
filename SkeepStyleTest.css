@@ -15,6 +15,9 @@
     font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
 }
 
+strong {
+    color: #046ab5
+}
 ul {
     line-height: 2; /* line-height sets the height of a line box. It's commonly used to set the distance between lines of text. 
                     On block-level elements, it specifies the minimum height of line boxes within the element. 
