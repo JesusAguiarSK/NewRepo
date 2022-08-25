@@ -64,20 +64,20 @@ h1 {
     background-image: url('images/gorilla.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: middle left;
+    background-position: center left;
 }
 .images li.hawk {
     background-image: url('images/hawk.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: middle center;
+    background-position: center center;
 }
 
 .images li.snake {
     background-image: url('images/snake.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: middle right;
+    background-position: center right;
 }
 .images li.tiger {
     background-image: url('images/tiger.jpg');
@@ -117,7 +117,6 @@ h1 {
         width: 200px;
         margin-right: 10px;
     }
-
 
     .images li.bear {
         background-size: 50px 50px;
