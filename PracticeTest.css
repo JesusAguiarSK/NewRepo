@@ -57,6 +57,13 @@
   display: inline-flex;
 }
 
+.images li.hawk {
+    background-image: url('images/office_2021_home_and_student_1.png.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 /*<div>
   <a id="hide1" href="#hide1" class="hide">+ Summary goes here</a>
   <a id="show1" href="#show1" class="show">- Summary goes here</a>
