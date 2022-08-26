@@ -35,14 +35,43 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: 80px;
     margin-bottom: 10px;
+    padding-left: 20px;
     background-color: #FFF;
     box-shadow: 3px 3px 10px #00000030;
 
     /*Expand property*/
 }
+
+
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+
+.hide:target + .show,
+.hide:target ~ .details {
+  display: inline-flex;
+}
+
+/*<div>
+  <a id="hide1" href="#hide1" class="hide">+ Summary goes here</a>
+  <a id="show1" href="#show1" class="show">- Summary goes here</a>
+  <div class="details">
+    Content goes here.
+  </div>
+</div>
+<div>
+  <a id="hide2" href="#hide2" class="hide">+ Summary goes here</a>
+  <a id="show2" href="#show2" class="show">- Summary goes here</a>
+  <div class="details">
+    Content goes here.
+  </div>
+</div>
+*/
 
 /*Set the layout change according to screen size*/
 
