@@ -1,17 +1,87 @@
 
-/* Style the whole container */
+.list {
+    list-style-type: none;
 
-.expanded {
-    max-width: 100%;
-    display: block;
+/*    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;*/
+
+}
+
+/*.list li{
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px #00000030;
+}
+*/
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 
 
-/* Style the collapsible container */
-.list {
 
-  /*Style*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/* Style the whole container */
+
+/*.expanded {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}*/
+
+
+/* Style the collapsible container */
+
+/*.list {
 
     display: flex;
     flex-flow: column wrap;
@@ -21,34 +91,30 @@
     padding: 0;
     box-sizing: border-box;
 
-  /*Expand property*/
-}
+}*/
 
 /* Style the collapsible list items */
 
+/*
 .list li{
 
-  /*Style*/
-
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #FFF;
-    box-shadow: 3px 3px 10px #00000030;
-
-    /*Expand property*/
-}
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px #00000030;
+}*/
 
 /*.office2021hs div.container {
   display: flex;
   justify-content: space-between;
 
-}*/
+}
 
 .details,
 .show,
@@ -65,28 +131,11 @@
     background-image: url('images/office_2021_home_and_student_1.png');
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-/*<div>
-  <a id="hide1" href="#hide1" class="hide">+ Summary goes here</a>
-  <a id="show1" href="#show1" class="show">- Summary goes here</a>
-  <div class="details">
-    Content goes here.
-  </div>
-</div>
-<div>
-  <a id="hide2" href="#hide2" class="hide">+ Summary goes here</a>
-  <a id="show2" href="#show2" class="show">- Summary goes here</a>
-  <div class="details">
-    Content goes here.
-  </div>
-</div>
-*/
+}*/
 
 /*Set the layout change according to screen size*/
 
-@media screen and (max-width: 720px) {
-
+/*@media screen and (max-width: 720px) {*/
 
 /*  Pic on top
 
@@ -94,3 +143,4 @@
 
 }
 
+/*--------------------------------*/
