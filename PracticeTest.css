@@ -54,7 +54,10 @@ button.collapsible:after {
   background-color: #FFF;
 }
 
+.group {
+  display: flex;
 
+}
 
 
 
