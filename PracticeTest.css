@@ -3,29 +3,13 @@
     font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
 }
 
-.list {
-    list-style-type: none;
-
-/*    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;*/
-
+h1 {
+  text-align: center;
+  color: #046ab5;
 }
 
-
-
 .list li{
-
-/*  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  padding-left: 20px;
-  padding-right: 20px;*/
+  list-style-type: none;
   margin-bottom: 10px;
   background-color: #FFF;
   box-shadow: 3px 3px 10px #00000030;
@@ -49,7 +33,6 @@ button.collapsible:after {
     content: '\002B';
     color: black;
     font-weight: bold;
-    float: right;
     margin-left: 5px;
 }
 
@@ -73,10 +56,12 @@ button.collapsible:after {
   list-style-type: none;
 }
 
-.information li {
-  margin-bottom: 40px;
-  box-shadow:none;
-  list-style-type: none;
+.information li.oldPprice {
+  text-decoration: line-through;
+}
+
+.information li.finalPrice {
+  color: #046ab5;
 }
 
 .buysafeseal_1_a {
@@ -93,89 +78,14 @@ button.collapsible:after {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------*/
-/* Style the whole container */
-
-/*.expanded {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}*/
-
-
-/* Style the collapsible container */
-
-/*.list {
-
-    display: flex;
-    flex-flow: column wrap;
-    list-style-type: none;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-
-}*/
-
-/* Style the collapsible list items */
-
-/*
-.list li{
-
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+button {
   background-color: #FFF;
-  box-shadow: 3px 3px 10px #00000030;
-}*/
-
-/*.office2021hs div.container {
-  display: flex;
-  justify-content: space-between;
+  cursor: pointer;
+  border: none;
 
 }
 
-.details,
-.show,
-.hide:target {
-  display: none;
+button:hover {
+  color: #046ab5;
 }
 
-.hide:target + .show,
-.hide:target ~ .details {
-  display: flex;
-}
-
-.display div.details {
-    background-image: url('images/office_2021_home_and_student_1.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}*/
-
-/*Set the layout change according to screen size*/
-
-/*@media screen and (max-width: 720px) {*/
-
-/*  Pic on top
-
-  Comment on bottom*/
-
-}
-
-/*--------------------------------*/

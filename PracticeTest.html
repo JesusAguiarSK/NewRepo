@@ -11,7 +11,7 @@
 <body>
 	
 	<header>
-		<h1>Our top products</h1>
+		<h1>Best Sellers</h1>
 	</header>
 
 
@@ -24,10 +24,10 @@
 					<img src="images/office_2021_home_and_student_1.png" title="office2021hs">
 	
 					<ul class="information">
-						<li>Microsoft Office 2021 Home & Student (PC)</li>
-						<li>M.S.R.P $149.99</li>
-						<li> <strong>Total Price: $114.99 </strong></li>
-						<li><img name="buysafeseal_1_img" id="buysafeseal_1_a" alt="Norton Shopping Guarantee" src="https://nsg.symantec.com/Web/Seal/si.aspx?s=955294143&amp;p=11&amp;t=a&amp;TS=b0f86&amp;R=0&amp;x=BLX"></li>
+						<li class="name">Microsoft Office 2021 Home & Student (PC)</li>
+						<li class="oldPprice">M.S.R.P $149.99</li>
+						<li class="finalPrice"> <strong>Total Price: $114.99 </strong></li>
+						<li class="picture"><img name="buysafeseal_1_img" id="buysafeseal_1_a" alt="Norton Shopping Guarantee" src="https://nsg.symantec.com/Web/Seal/si.aspx?s=955294143&amp;p=11&amp;t=a&amp;TS=b0f86&amp;R=0&amp;x=BLX"></li>
 
 						<li><button class="btn btn-success" onclick=" window.open('https://softwarekeep.com/microsoft-office-2021-home-and-student-pc.html','_blank')">Learn More</button></li>
 					</ul>
@@ -200,153 +200,24 @@
 		</li>
 	</ul>
 
-
-	
-<!-- 	<ul class="list">
-
-		<button type="button" class="collapsible">Microsoft Office 2021 Home & Student (PC)</button>
-		<li class="content">
-			1
-		</li>
-
-
-		<button type="button" class="collapsible">Microsoft Office 2021 Home & Student for Mac</button>
-		<li class="content">
-			1
-		</li>
-
-
-		<button type="button" class="collapsible">Microsoft Office 2021 Home and Business</button>
-		<li class="content">
-			1
-		</li>
-
-		<button type="button" class="collapsible">Microsoft Office 2021 Home and Business (Mac)</button>
-		<li class="content">
-			1
-		</li>
-
-		<button type="button" class="collapsible">Microsoft Office 2019 Home and Business for Mac</button>
-		<li class="content">
-			1
-		</li>
-
-
-		<button type="button" class="collapsible">Microsoft Office 2019 Home and Student</button>
-		<li class="content">
-			1
-		</li>
-
-
-		<button type="button" class="collapsible">Microsoft Office 2019 Home and Business</button>
-		<li class="content">
-			1
-		</li>
-
-		<button type="button" class="collapsible">Microsoft Office 2019 Home and Student for Mac</button>
-		<li class="content">
-			1
-		</li>
-
-
-		<button type="button" class="collapsible">Microsoft Windows 10 Pro Edition 32-bit</button>
-		<li class="content">
-			1
-		</li>
-
-		
-		<button type="button" class="collapsible">Microsoft Word 2019 for PC</button>
-		<li class="content">
-			1
-		</li>	
-
-
 	</ul> -->
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.display === "block") {
+	      content.style.display = "none";
+	    } else {
+	      content.style.display = "block";
+	    }
+	  });
+	}
 </script>
 
 </body>
 
-<!-- <body>
-	<header>
-
-        <h1>Top Products</h1>
-
-    </header>
-    <div class="expanded">
-	    <ul class="list">
-	    	<li class="office2021hs">
-	    			Container for images and content
-
-    			<div class="container">
-    				<div>Microsoft Office 2021 Home & Student (PC)</div>
-
-    				<div class="display">
-	    		    	<a id="hide" href="#hide" class="hide">&#8615</a>
-	    				<a id="show" href="#show" class="show">&#8613</a>	
-
-		    			<div class="details">
-		    				EtcEtcEtcEtcEtc
-
-						 	<div class="image"></div>
-								<a href="images/office_2021_home_and_student_1.png"></a>
-						 	<div class="content"></div>
-
-						</div>
-    				</div>
-
-    			</div>
-	    				<span>Container</span>
-    					Name
-    					Price 1
-    					Price 2
-    					Skeep guaranted
-    					Button
-
-	    	</li>
-	    	<li class="mac2021hs">
-	    		<span>Microsoft Office 2021 Home & Student for Mac</span>	
-	    	</li>
-	    	<li class="office2021hb">
-	    		<span>Microsoft Office 2021 Home and Business</span>
-	    	</li>
-	    	<li class="mac2021hb">
-	    		<span>Microsoft Office 2021 Home and Business (Mac)</span>
-	    	</li>
-	    	<li class="mac2019hb">
-	    		<span>Microsoft Office 2019 Home and Business for Mac<span>
-	    	</li>
-	    	<li class="office2019hs">
-	    		<span>Microsoft Office 2019 Home and Student</span>	    	
-	    	</li>
-	    	<li class="office2019hb">
-	    		<span>Microsoft Office 2019 Home and Business</span>		
-	    	</li>
-	    	<li class="mac2019hs">
-	    		<span>Microsoft Office 2019 Home and Student for Mac</span>
-	    	</li>
-	    	<li class="win10pro32">
-	    		<span>Microsoft Windows 10 Pro Edition 32-bit</span>	
-	    	</li>
-	    	<li class="word2019">
-	    		<span>Microsoft Word 2019 for PC</span>	
-	    	</li>
-
-	    </ul>
-    </div>
-</body> -->
 </html>
