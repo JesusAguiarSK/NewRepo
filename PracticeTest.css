@@ -57,11 +57,29 @@ button.collapsible:after {
 .group {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 }
 
+.information li {
+  margin-bottom: 40px;
 
+}
 
+.buysafeseal_1_a {
 
+  border: 0px; 
+  margin: 0px; 
+  padding: 0px; 
+  height: auto; 
+  min-height: 0px; 
+  max-height: none; 
+  width: auto; 
+  min-width: 0px; 
+  max-width: none; 
+  vertical-align: bottom; 
+  cursor: pointer;
+}
 
 
 
