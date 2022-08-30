@@ -89,3 +89,13 @@ button:hover {
   color: #046ab5;
 }
 
+@media only screen and (max-width: 720px) {
+
+  .information {
+    width: 270px;
+    margin-right: 10px;
+    display: block;
+  }
+
+}
+
