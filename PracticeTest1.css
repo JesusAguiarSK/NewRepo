@@ -1,0 +1,91 @@
+* {
+    font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
+    box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #046ab5;
+}
+
+.list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+} 
+
+.list li {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    min-height: 174px;
+    background-color: #fff;
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    box-shadow: 3px 3px 10px #00000030;
+}
+
+.list li.group {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+img  {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    .list {
+        width: 270px;
+        margin: 0 20px 0 0;
+    }
+
+    .collapsible {
+        width: 270px;
+        margin: 0 20px 0 0;
+    }
+
+    .group {
+        width: 270px;
+        margin: 0 20px 0 0;
+    }
+
+    .img {
+        width: 270px;
+        margin: 0 20px 0 0;  
+    }
+
+    .content {
+        width: 270px;
+        margin: 0 20px 0 0;
+    }
+
+    
+
+}
