@@ -1,6 +1,7 @@
 * {
     font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 h1 {
@@ -8,16 +9,55 @@ h1 {
   color: #046ab5;
 }
 
-.list {
+.bestseller-product-list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.bestseller-product-list .bestseller-product-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    min-height: 174px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #00000030
+
+}
+
+.bestseller-product-list .bestseller-product-item .bestseller-content {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+
+
+
+/*.list {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
 
-} 
+} */
 
-.list li {
+/*.list li {
 
     display: flex;
     justify-content: center;
@@ -31,9 +71,9 @@ h1 {
     margin-bottom: 10px;
     background-color: #FFF;
     box-shadow: 3px 3px 10px #00000030;
-}
+}*/
 
-.list li.group {
+/*.list li.group {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -43,8 +83,8 @@ h1 {
     max-width: 100%;
     margin: 0 auto;
 }
-
-img  {
+*/
+/*img  {
     display: inline-block;
     max-width: 100%;
     overflow: hidden;
@@ -52,11 +92,11 @@ img  {
     margin: 0px;
 
 }
-
-.content {
+*/
+/*.content {
     display: flex;
     flex-direction: column;
-}
+}*/
 
 
 @media screen and (min-width: 720px) {
