@@ -31,7 +31,7 @@ h1 {
 }
 
 .bestseller-product-list .bestseller-product-item .bestseller-content {
-    width: 70%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -48,17 +48,22 @@ h1 {
 
 }
 
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
     overflow: hidden;
     transition: all 1s ease;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
 
     .bestseller-product-list li {
-        padding: 0 0 40px;
+        padding: 0 0 20px;
         margin-bottom: 30px;
-        border-bottom: 1px solid #474747;
     }
 
     .bestseller-product-list li.bestseller-product-item {
@@ -76,7 +81,7 @@ h1 {
     }
 
     .bestseller-product-list li.bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-image {
-        max-width: 410px;
+        max-width: 300px;
         
     }
 
