@@ -24,7 +24,7 @@ h1 {
     width: 80%;
     margin-bottom: 20px;
     cursor: pointer;
-    min-height: 174px;
+    min-height: 200px;
     background-color: #fff;
     box-shadow: 3px 3px 10px #00000030
 
@@ -53,6 +53,52 @@ h1 {
     flex-direction: column;
 
 }
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .product-price {
+    display: block;
+    margin: 20px 0 10px;
+}
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .product-price .price-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .product-price .price-box .msrp {
+   
+    margin-right: 5px;
+    position: relative;
+    top: auto;
+    right: auto;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    line-height: 21px;
+}
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .product-price .price-box .old-price {
+   
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #6d8fa0;
+    text-decoration: line-through;
+}
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .product-price .price-box .final-price {
+   
+    display: flex;
+    align-items: flex-start;
+    color: #046ab5;
+    line-height: 29px;
+    font-size: 25px;
+
+}
+
 
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
     overflow: hidden;
