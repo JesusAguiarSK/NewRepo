@@ -9,8 +9,16 @@ h1 {
   color: #046ab5;
 }
 
-h4 {
+h4:hover {
     cursor: pointer;
+    color: #046ab5;
+}
+
+h4:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 .bestseller-product-list {
@@ -20,6 +28,7 @@ h4 {
     flex-flow: row wrap;
     width: 100%;
 }
+
 
 .bestseller-product-list .bestseller-product-item {
     display: flex;
@@ -43,6 +52,7 @@ h4 {
     flex-direction: column;
 }
 
+
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
     display: flex;
     flex-flow: row nowrap;
@@ -50,6 +60,13 @@ h4 {
     align-items: flex-start;
 
 }
+
+/*.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
+      display: none;
+      overflow: hidden;
+      background-color: #FFF;
+
+}*/
 
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information {
     display: flex;
