@@ -9,6 +9,10 @@ h1 {
   color: #046ab5;
 }
 
+h4 {
+    cursor: pointer;
+}
+
 .bestseller-product-list {
     align-items: center;
     justify-content: center;
@@ -23,7 +27,6 @@ h1 {
     flex-direction: column;
     width: 80%;
     margin-bottom: 20px;
-    cursor: pointer;
     min-height: 200px;
     background-color: #fff;
     box-shadow: 3px 3px 10px #00000030
@@ -64,6 +67,8 @@ h1 {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .product-price .price-box .msrp {
@@ -96,9 +101,16 @@ h1 {
     color: #046ab5;
     line-height: 29px;
     font-size: 25px;
+    width: 100%;
+    margin-top: 10px;
+    order: 3;
 
 }
 
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .norton-guarantee {
+    display: block;
+    margin-bottom: 20px;
+}
 
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
     overflow: hidden;
