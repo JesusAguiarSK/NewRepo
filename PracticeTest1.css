@@ -135,12 +135,14 @@ h4:after {
     margin-bottom: 20px;
 }
 
-.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
+
+
+/*.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
     overflow: hidden;
     transition: all 1s ease;
     margin-right: 20px;
 }
-
+*/
 @media screen and (max-width: 900px) {
 
     .bestseller-product-list li {
