@@ -56,10 +56,13 @@ h4:after {
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
     display: flex;
     flex-flow: row nowrap;  
-    justify-content: space-between;
-    align-items: flex-start;              
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;          
 
 }
+
+/*Trying to figure it out how to make the stuff hidden.  */
         
 /*.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
       display: none;
@@ -67,6 +70,14 @@ h4:after {
       background-color: #FFF;
     
 }*/
+
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
+/*    overflow: hidden;
+    transition: all 1s ease;*/
+    margin-right: 140px;
+}
+
 
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information {
     display: flex;
@@ -136,13 +147,6 @@ h4:after {
 }
 
 
-
-/*.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image {
-    overflow: hidden;
-    transition: all 1s ease;
-    margin-right: 20px;
-}
-*/
 @media screen and (max-width: 900px) {
 
     .bestseller-product-list li {
