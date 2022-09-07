@@ -18,9 +18,10 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">
+				<span class="bestseller-collapsible">
 					Microsoft Office 2021 Home & Student (PC)
 				</span>
+
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 					
@@ -50,14 +51,17 @@
 						<div class="product-page">
 							<a href="https://softwarekeep.com/microsoft-office-2021-home-and-student-pc.html" target="_blank">Learn More</a>
 						</div>
-					</div>
+					</div>					
+
+
 				</div>
 			</div>
 		</li>
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2021 Home & Student for Mac</span>
+				<span class="bestseller-collapsible">Microsoft Office 2021 Home & Student for Mac</span>
+
 				
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
@@ -95,7 +99,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2021 Home and Business</span>
+				<span class="bestseller-collapsible">Microsoft Office 2021 Home and Business</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -132,7 +136,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2021 Home and Business (Mac)</span>
+				<span class="bestseller-collapsible">Microsoft Office 2021 Home and Business (Mac)</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -170,7 +174,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2019 Home and Business for Mac</span>
+				<span class="bestseller-collapsible">Microsoft Office 2019 Home and Business for Mac</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -208,7 +212,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2019 Home and Student</span>
+				<span class="bestseller-collapsible">Microsoft Office 2019 Home and Student</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -248,7 +252,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2019 Home and Business</span>
+				<span class="bestseller-collapsible">Microsoft Office 2019 Home and Business</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -288,7 +292,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Office 2019 Home and Student for Mac</span>
+				<span class="bestseller-collapsible">Microsoft Office 2019 Home and Student for Mac</span>
 				<div class="bestseller-responsive">
 
 					<div class="bestseller-image">
@@ -328,7 +332,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Windows 10 Pro Edition 32-bit</span>
+				<span class="bestseller-collapsible">Microsoft Windows 10 Pro Edition 32-bit</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -367,7 +371,7 @@
 
 		<li class="bestseller-product-item">
 			<div class="bestseller-content">
-				<span class="collapsible">Microsoft Word 2019 for PC</span>
+				<span class="bestseller-collapsible">Microsoft Word 2019 for PC</span>
 				<div class="bestseller-responsive">
 					<div class="bestseller-image">
 						
@@ -379,6 +383,7 @@
 						<div class="product-title">
 							<span class="product-name">Microsoft Word 2019 for PC</span>
 						</div>
+
 						<div class="product-price">
 							<div>
 								<div class="price-box">
@@ -407,22 +412,21 @@
 
 	</ul>
 
-<!-- <script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
+<script>
+	let coll = document.querySelectorAll('.bestseller-collapsible');
+	let i;
 	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-	    this.classList.toggle("active");
-	    var content = this.nextElementSibling;
-	    if (content.style.display === "block") {
-	      content.style.display = "none";
+	  coll[i].addEventListener('click', function() {
+	    this.classList.toggle('active');
+	    let content = this.nextElementSibling;
+	    if (content.style.display === 'none') {
+	      content.style.display = 'flex';
 	    } else {
-	      content.style.display = "block";
+	      content.style.display = 'none';
 	    }
 	  });
 	}
-</script> -->
+</script>
 
 </body>
 
