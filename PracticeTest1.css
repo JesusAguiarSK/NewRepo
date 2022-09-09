@@ -12,6 +12,7 @@ h1 {
 .bestseller-collapsible {
     margin: 20px 0px;
     font-weight: 700;
+    max-width: 100%;
 }
 
 .bestseller-collapsible:hover {
@@ -58,12 +59,28 @@ h1 {
     flex-direction: column;
 }
 
+/*.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
+    display: none
+}
+
+
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-collapsible.active .bestseller-responsive {
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+}*/
+
+
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
     display: flex;
     flex-flow: row nowrap;  
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
+    width: 100%;
 }
 
 
@@ -71,6 +88,9 @@ h1 {
     margin-right: 140px;
 }
 
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-image img {
+    max-width: 100%;
+}
 
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information {
     display: flex;
@@ -141,6 +161,9 @@ h1 {
     margin-bottom: 20px;
 }
 
+.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive .bestseller-information .norton-guarantee img {
+    max-width: 100%;
+}
 
 @media screen and (max-width: 900px) {
 
