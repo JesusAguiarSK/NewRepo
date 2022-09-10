@@ -35,10 +35,47 @@ h1 {
     height: 200px;
     margin-bottom: 10px;
     border-radius:50%;
-    background-color: #FFF;
+/*    background-color: #FFF;*/
     box-shadow: 3px 3px 10px #00000030;
     transition: all 0.7s ease;
 }
+
+.circle-1 {
+    background-color:  #191970;
+}
+
+.circle-2 {
+    background-color:  #000080;
+}
+
+.circle-3 {
+    background-color:  #00008B
+}
+
+.circle-4 {
+    background-color:   #0000CD;
+}
+
+.circle-5 {
+    background-color:   #0000FF;
+}
+
+.circle-6 {
+    background-color:   #4169E1;
+}
+
+.circle-7 {
+    background-color:  #1E90FF;
+}
+
+.circle-8 {
+    background-color:   #00BFFF;
+}
+
+.circle-9 {
+    background-color:   #87CEEB;
+}
+
 
 @media screen and (min-width: 660px) {
     .circles-list li {
