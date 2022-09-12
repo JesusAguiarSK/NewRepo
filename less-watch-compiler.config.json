@@ -1,7 +1,5 @@
 {
-    "allowedExtensions":[".less"],
-    "minified":false,
-    "sourceMap":false,
     "watchFolder": "less",
     "outputFolder": "css",
+    "mainFile": "test.less"
 }
