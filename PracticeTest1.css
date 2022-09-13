@@ -59,21 +59,6 @@ h1 {
     flex-direction: column;
 }
 
-/*.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
-    display: none
-}
-
-
-.bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-collapsible.active .bestseller-responsive {
-    display: flex;
-    flex-flow: row nowrap;  
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-    width: 100%;
-}*/
-
-
 .bestseller-product-list .bestseller-product-item .bestseller-content .bestseller-responsive {
     display: flex;
     flex-flow: row nowrap;  
