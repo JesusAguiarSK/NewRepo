@@ -1,12 +1,6 @@
-// function setdetails() { 
 
-// }
-
-//I need to add a listener on click, so when the set button is clicked
+//Task: I need to add a listener on click, so when the set button is clicked
 //the div's attributes are modified.
-
-
-
 
 //We gotta select all the css properties as an array
 
@@ -14,65 +8,38 @@ let property = document.querySelectorAll('select[name="cssProperty"]');
 
 console.log(property);
 
-// Now we gotta make an array of the options the user 
-// has selected 
+let i;
 
-function getSelectedDetails() {
+var valuesArray = [];
 
+for (i = 0; i <= property.length; i++) {
 
-	var eBackground = document.getElementById("background");
-	var valueBackground = eBackground.options[eBackground.selectedIndex].valueBackground;
-	var textvalueBackground = eBackground.options[eBackground.selectedIndex].textvalueBackground;
+	// Now we gotta make an array of the options the user 
+	// has selected 
 
-	// var e = document.getElementById("width");
-	// var value = e.options[e.selectedIndex].value;
-	// var text = e.options[e.selectedIndex].text;
+	if (i == property.length) {break;}
 
-	// var e = document.getElementById("height");
-	// var value = e.options[e.selectedIndex].value;
-	// var text = e.options[e.selectedIndex].text;
+	var selectedProperty = property[i];
+	var value = selectedProperty.options[selectedProperty.selectedIndex].value;
+	var text = selectedProperty.options[selectedProperty.selectedIndex].text;
 
-	console.log(textvalueBackground);
+	console.log(text);
 
-};
+	valuesArray.push({value: text});
 
-var e = document.getElementById("width");
-var value = e.options[e.selectedIndex].value;
-var text = e.options[e.selectedIndex].text;
+}
 
-console.log(text);
-
-//We gotta select the div
-
-// var changebox = document.getElementById('modify');
-
-// function { 
-
-// 	changebox.addEventListener('click', function {
-// 		//modify the modify variable for the concat of the selected values
-// 	}) 
-
-// };
+console.log(valuesArray);
 
 
 
-// let i;
+//We gotta select the div to replace its values with the ones
+//of the iteration
 
-// for( let i = 0; i < counter.length; i++) 
-// {
-// 	console.log(counter[i]);
-// }
+var changebox = document.getElementById('modify');
+
+changebox.addEventListener('click', function {
+		//modify the modify variable for the concat of the selected values
+	});
 
 
-
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener('click', function() {
-//     this.classList.toggle('active');
-//     let content = this.nextElementSibling;
-//     if (content.style.display === 'flex') {
-//       content.style.display = 'none';
-//     } else {
-//       content.style.display = 'flex';
-//     }
-//   });
-// }
