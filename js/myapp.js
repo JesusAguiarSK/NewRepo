@@ -17,11 +17,12 @@ console.log(property);
 // Now we gotta make an array of the options the user 
 // has selected 
 
-function getSelectedDetails {
+function getSelectedDetails() {
 
-	// var e = document.getElementById("background");
-	// var value = e.options[e.selectedIndex].value;
-	// var text = e.options[e.selectedIndex].text;
+
+	var eBackground = document.getElementById("background");
+	var valueBackground = eBackground.options[eBackground.selectedIndex].valueBackground;
+	var textvalueBackground = eBackground.options[eBackground.selectedIndex].textvalueBackground;
 
 	// var e = document.getElementById("width");
 	// var value = e.options[e.selectedIndex].value;
@@ -31,22 +32,27 @@ function getSelectedDetails {
 	// var value = e.options[e.selectedIndex].value;
 	// var text = e.options[e.selectedIndex].text;
 
-	console.log(text);
+	console.log(textvalueBackground);
 
 };
 
+var e = document.getElementById("width");
+var value = e.options[e.selectedIndex].value;
+var text = e.options[e.selectedIndex].text;
+
+console.log(text);
 
 //We gotta select the div
 
-var changebox = document.getElementById('modify');
+// var changebox = document.getElementById('modify');
 
-function { 
+// function { 
 
-	changebox.addEventListener('click', function {
-		//modify the modify variable for the concat of the selected values
-	}) 
+// 	changebox.addEventListener('click', function {
+// 		//modify the modify variable for the concat of the selected values
+// 	}) 
 
-};
+// };
 
 
 
