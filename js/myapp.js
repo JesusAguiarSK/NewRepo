@@ -32,14 +32,24 @@ for (i = 0; i <= property.length; i++) {
 console.log(valuesArray);
 
 
-
 //We gotta select the div to replace its values with the ones
 //of the iteration
 
-var changebox = document.getElementById('modify');
+var changeboxWidth = document.getElementById('modify').style['width'];
+var changeboxHeight = document.getElementById('modify').style['height'];
+var changeboxBackground = document.getElementById('modify').style['background'];
 
-changebox.addEventListener('click', function {
+var changebox = [changeboxWidth,changeboxHeight,changeboxBackground];
+
+console.log(changebox);
+
+
+
+let setButton = document.getElementById('set');
+
+setButton.addEventListener('click', function (event) {
+
+	console.log(modify);
+
 		//modify the modify variable for the concat of the selected values
 	});
-
-
