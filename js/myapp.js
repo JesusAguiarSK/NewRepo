@@ -1,6 +1,8 @@
+//Task: given the index.html file, without modifying it, 
+//make a script so when the user chooses the options on 
+//the dropdown menu and presses set, the box's attributes 
+//are modified accordingly.
 
-//Task: I need to add a listener on click, so when the set button is clicked
-//the div's attributes are modified.
 
 //We gotta select all the css properties as an array
 
@@ -23,33 +25,40 @@ for (i = 0; i <= property.length; i++) {
 	var value = selectedProperty.options[selectedProperty.selectedIndex].value;
 	var text = selectedProperty.options[selectedProperty.selectedIndex].text;
 
-	console.log(text);
+	//console.log(text);
 
 	valuesArray.push({value: text});
 
 }
 
-console.log(valuesArray);
+//console.log(valuesArray); //Format: background, width, height
 
-
-//We gotta select the div to replace its values with the ones
+//Idea: the div's values as an array to replace them with the ones
 //of the iteration
 
-var changeboxWidth = document.getElementById('modify').style['width'];
-var changeboxHeight = document.getElementById('modify').style['height'];
-var changeboxBackground = document.getElementById('modify').style['background'];
 
-var changebox = [changeboxWidth,changeboxHeight,changeboxBackground];
+// var changeboxWidth = document.getElementById('modify').style['width'];
+// var changeboxHeight = document.getElementById('modify').style['height'];
+// var changeboxBackground = document.getElementById('modify').style['background'];
 
-console.log(changebox);
+// var changebox = [{value: changeboxWidth},{value:changeboxHeight},{value:changeboxBackground}];
+
+// console.log(changebox); //Format: width, height, background
 
 
+
+var modifyStyle = document.getElementById('modify').style;
+console.log(modifyStyle);
+
+// modifyArray = [{0: 'width'}, {1: 'height'}, {background: 'blue'}]
 
 let setButton = document.getElementById('set');
 
 setButton.addEventListener('click', function (event) {
 
-	console.log(modify);
 
-		//modify the modify variable for the concat of the selected values
+ 	//Here I would need to modify the modify's style witdh, heigh and background values with the ones
+ 	//of the valuesArray variable (which has the selected values of the user)
+
 	});
+
