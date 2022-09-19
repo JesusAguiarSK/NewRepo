@@ -1,6 +1,6 @@
 //Task: given the index.html file, without modifying it, 
 //make a script so when the user chooses the options on 
-//the dropdown menu and presses set, the box's attributes 
+//the dropdown menus and presses set, the box's attributes 
 //are modified accordingly.
 
 
@@ -34,7 +34,7 @@ for (i = 0; i <= property.length; i++) {
 //console.log(valuesArray); //Format: background, width, height
 
 //Idea: the div's values as an array to replace them with the ones
-//of the iteration
+//of the iteration. This is just testing for now.
 
 
 // var changeboxWidth = document.getElementById('modify').style['width'];
@@ -46,9 +46,10 @@ for (i = 0; i <= property.length; i++) {
 // console.log(changebox); //Format: width, height, background
 
 
+//Just checking the div's style format.
 
-var modifyStyle = document.getElementById('modify').style;
-console.log(modifyStyle);
+// var modifyStyle = document.getElementById('modify').style;
+// console.log(modifyStyle);
 
 // modifyArray = [{0: 'width'}, {1: 'height'}, {background: 'blue'}]
 
