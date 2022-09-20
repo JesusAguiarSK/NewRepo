@@ -31,7 +31,7 @@ for (i = 0; i <= property.length; i++) {
 
 }
 
-//console.log(valuesArray); //Format: background, width, height
+console.log(valuesArray); //Format: background, width, height
 
 //Idea: the div's values as an array to replace them with the ones
 //of the iteration. This is just testing for now.

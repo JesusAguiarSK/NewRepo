@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Big Task</title>
+
+	<link rel="icon" type="image/x-icon" href="images/SKeepLogo.ico">
+
+    <link rel="stylesheet" type="text/css" href="./css/BigTask.css">
+</head>
+<body>
+	
+	<header>
+		<h1>Big Task</h1>
+	</header>
+
+
+<div class="zip-code-div">
+	<form class="zip-code-form">
+<!-- 		reset form if code is not valid -->
+
+		<div class="zip-code-box">
+			<label for="fname">Zip Code</label>
+	        <input type="text" id="
+	        zip-code" />
+	        <!-- get from zip -->
+
+		</div>
+
+
+		<div class="button-group">
+<!-- 			Needs to be the same page
+ -->			<button type="submit" formmethod="get" form="zip-code-form" >Get Information</button>
+
+<!--  https://api.ipstack.com/134.201.250.155
+    ? access_key = 659f5f3c12db93d74081a3d14e06fcfa
+    & output = json -->
+
+		</div>
+	</form>
+</div>    
+        <!-- Submit event, to ge the API thing -->
+<!--         https://ipstack.com/  -->
+<!-- fetch , $.ajax({..})  $.get|post() -->
+
+<div class="zip-code-group">
+<!-- 	display on same page -->
+	<div class="zip-code-map">
+		<iframe src="">
+<!-- 			renderend with default place -->
+			
+		</iframe>
+	</div>
+
+	<div class="zip-code-info">
+		<ul class="zip-code-list">
+			<li class="Street"></li>
+				<!-- No idea -->
+			<li class="City"></li>
+				<!-- city: -->
+			<li class="State"></li>
+				<!-- region_name: -->
+			<li class="Country"></li>
+				<!-- country_name: -->
+		</ul>
+	</div>
+	
+
+</div>
+
+
+	<script type="text/javascript" src="./js/BigTask.js"></script>
+</body>
+</html>
