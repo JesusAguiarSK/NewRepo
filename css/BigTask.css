@@ -27,7 +27,13 @@ h1 {
   align-items: center;
   flex-flow: column wrap;
   margin-bottom: 20px;
-  box-shadow: 3px 3px 10px #00000030;
+}
+.zip-code-div .zip-code-form .zip-code-box .zip-code-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
 }
 .zip-code-div .zip-code-form .zip-code-button-group {
   display: flex;
