@@ -25,31 +25,26 @@
 
 //Convert the information it to a list in html?
 
-document.getElementById('button-group-box').addEventListener('click', function(event) {
+// document.getElementById('button-group-box').addEventListener('click', function(event) {
 
-      
-      // var geoArrayFilter = geoArray.method to extract the above values.
+// //check if post code is valid
 
-      //Information
-        // Street,
-        // City,
-        // State
-        // Country
-      //link to map
-        //map
+//     if valid
 
+//       // var geoArrayFilter = geoArray.method to extract the below values.
 
- 
+//       //Information
+//         // Street,
+//         // City,
+//         // State
+//         // Country
+//       //link to map
+//         //map
 
-    //check if post code is valid
-
-    if valid
-
-
-
-
-
-    
-
-});
+//     else
+//       document.getElementById('zip-code').addEventListener('', function (event) {
+//         //reset content of zip code
+//       });
+//       // 
+// });
 

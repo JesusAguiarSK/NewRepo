@@ -7,3 +7,33 @@ h1 {
   text-align: center;
   color: #046ab5;
 }
+.zip-code-div {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.zip-code-div .zip-code-form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.zip-code-div .zip-code-form .zip-code-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px #00000030;
+}
+.zip-code-div .zip-code-form .zip-code-button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px #00000030;
+}
