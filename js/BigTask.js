@@ -1,3 +1,5 @@
+//I need a different geolocation API
+
 // const cors = require('cors');
 
 // fetch( 'https://ipstack.com/', {mode: 'cors', method: 'GET', })
