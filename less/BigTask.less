@@ -9,51 +9,145 @@ h1 {
   color: #046ab5;
 }
 
-.zip-code-div {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-
-    .zip-code-form {
+.zip-code-form-items{
+    .zip-code-form-group {
         align-items: center;
         justify-content: center;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         width: 100%;
 
-        .zip-code-box {
-            display: flex;
-            justify-content: center;
+        .zip-code-form {
             align-items: center;
+            justify-content: center;
+            display: flex;
             flex-flow: column wrap;
-            margin-bottom: 20px;
-            // min-height: 200px;
-            // background-color: #fff;
-            // box-shadow: 3px 3px 10px #00000030;
+            width: 100%;
 
-            .zip-code-title {
+            .zip-code-box {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-flow: column wrap;
                 margin-bottom: 20px;
+                // min-height: 200px;
+                // background-color: #fff;
+                // box-shadow: 3px 3px 10px #00000030;
+
+                .zip-code-title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-flow: column wrap;
+                    margin-bottom: 20px;
+                }
+
             }
 
-        }
+            .zip-code-button-group {
 
-        .zip-code-button-group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column wrap;
+                margin-bottom: 20px;
+                // min-height: 200px;
+                // background-color: #fff;
+                box-shadow: 3px 3px 10px #00000030;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column wrap;
-            margin-bottom: 20px;
-            // min-height: 200px;
-            // background-color: #fff;
-            box-shadow: 3px 3px 10px #00000030;
+                #button-group-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-flow: column wrap;
+                }
+            }
         }
     }
+    .zip-code-result-group {
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+
+        .zip-code-map {
+            margin-right: 20px;
+
+            iframe {
+                width: 100%;
+            }
+        }
+
+        .zip-code-details {
+
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-flow: column wrap;
+
+            .zip-code-list {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-flow: column wrap;
+
+                span {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+    }    
+}
+@media screen and (max-width: 900px) {
+
+    flex-wrap: inherit;
+
+    .zip-code-form-group {
+        flex-wrap: inherit;
+        
+        .zip-code-form {
+            flex-wrap: inherit;
+
+            .zip-code-box {
+                flex-wrap: inherit;
+                width: 100%;
+            }
+            .zip-code-button-group {
+                flex-wrap: inherit;
+
+            }
+        }
+    }
+    .zip-code-result-group {
+        flex-wrap: inherit;
+
+        .zip-code-map {
+            flex-wrap: inherit;
+            align-items: center;
+
+            iframe {
+                flex-wrap: inherit;
+            }
+        }
+
+        .zip-code-info {
+            flex-wrap: inherit;
+            align-items: center;
+
+            .zip-code-details {
+                flex-wrap: inherit;
+                align-items: center;
+
+                span {
+                    flex-wrap: inherit;
+                }
+            }
+        }
+    }
+
 }
 
