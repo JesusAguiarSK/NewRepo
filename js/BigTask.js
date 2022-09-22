@@ -1,16 +1,14 @@
-//I need a different geolocation API/
 
-// const cors = require('cors');
+var geoArray = [];
 
-// fetch( 'https://ipstack.com/', {mode: 'cors', method: 'GET', })
+fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {mode: 'cors', method: 'GET', })
+  .then(res => res.json())
+  .then(data => { geoArray.push(data);}) 
+  .catch(error => console.log('ERROR'));
 
-//   .then( res => res.json())
-//   .then(data => console.log(data));
-
-// var geoArray = //data from the fetch//  
+console.log(geoArray)
 
 
-//I need a different geolocation API/
 
 // let geoArrayDefault = geoArray.method to extract the below values.
       //Information
@@ -45,6 +43,3 @@
 //       document.getElementById('zip-code').addEventListener('', function (event) {
 //         //reset content of zip code
 //       });
-//       // 
-// });
-
