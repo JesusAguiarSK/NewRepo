@@ -3,7 +3,7 @@ var geoArray = [];
 
 fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {mode: 'cors', method: 'GET', })
   .then(res => res.json())
-  .then(data => { geoArray.push(data);}) 
+  .then(data => geoArray.push(data)) 
   .catch(error => console.log('ERROR'));
 
 console.log(geoArray)
