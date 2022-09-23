@@ -13,9 +13,9 @@ console.log(geoArray)
 // let geoArrayDefault = geoArray.method to extract the below values.
       //Information
         // Street,
-        // City,
+        // city:
         // State
-        // Country
+        // country_code:
       //link to map
         //map
 
