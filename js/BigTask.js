@@ -1,12 +1,26 @@
 
 var geoArray = [];
 
-fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {mode: 'cors', method: 'GET', })
-  .then(res => res.json())
-  .then(data => geoArray.push(data)) 
+// fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {mode: 'cors', method: 'GET', })
+//   .then(res => res.json())
+//   .then(data => console.log(data))
+//   // .then(data => geoArray.push(data))
+//   .catch(error => console.log('ERROR'));
+
+fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {
+  mode: 'cors', 
+  method: 'GET', 
+  headers: {'Content-Type': 'application/json'},
+  // body: JSON.stringify({})
+})
+  .then(res => {return res.json()})
+  .then(data => console.log(data))
   .catch(error => console.log('ERROR'));
 
-console.log(geoArray)
+
+// console.log(geoArray);
+
+// 
 
 //logic: the array seems to have the following structure:
 //I need to find the way to access the below information
