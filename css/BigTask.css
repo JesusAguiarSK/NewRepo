@@ -56,13 +56,16 @@ h1 {
   flex-flow: row wrap;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map {
+  align-items: center;
+  justify-content: space-evenly;
   margin-right: 10px auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map iframe {
   width: 100%;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-info {
-  width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
