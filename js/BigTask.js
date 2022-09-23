@@ -8,6 +8,28 @@ fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a
 
 console.log(geoArray)
 
+//logic: the array seems to have the following structure:
+//I need to find the way to access the below information
+
+var geoArrayFull = [ {0:{
+                      query:{
+
+                      },
+                      results: {1060:[0:{city: Caracas,
+                                         country_code:VE,
+                                         latitude: X,
+                                         longitude: Y,
+                                         state:
+                                          },
+                                      1:{},
+                                      2:{}
+                                      ]
+                      },
+                    }, 
+                  } ];
+
+console.log(geoArrayFull)
+
 // set a default value for all the target classes in the html. 
 
 // let geoArrayDefault = geoArray.method to extract the below values.
