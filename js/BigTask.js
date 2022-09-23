@@ -11,24 +11,24 @@ console.log(geoArray)
 //logic: the array seems to have the following structure:
 //I need to find the way to access the below information
 
-var geoArrayFull = [ {0:{
-                      query:{
+// var geoArrayFull = [ {0:{
+//                       query:{
 
-                      },
-                      results: {1060:[0:{city: Caracas,
-                                         country_code:VE,
-                                         latitude: X,
-                                         longitude: Y,
-                                         state:
-                                          },
-                                      1:{},
-                                      2:{}
-                                      ]
-                      },
-                    }, 
-                  } ];
+//                       },
+//                       results: {1060:[0:{city: Caracas,
+//                                          country_code:VE,
+//                                          latitude: X,
+//                                          longitude: Y,
+//                                          state:
+//                                           },
+//                                       1:{},
+//                                       2:{}
+//                                       ]
+//                       },
+//                     }, 
+//                   } ];
 
-console.log(geoArrayFull)
+
 
 // set a default value for all the target classes in the html. 
 
