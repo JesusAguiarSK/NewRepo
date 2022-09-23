@@ -51,34 +51,34 @@ h1 {
 }
 .zip-code-form-items .zip-code-result-group {
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   flex-flow: row wrap;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map {
-  margin-right: 20px;
+  margin-right: 10px auto;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map iframe {
   width: 100%;
 }
-.zip-code-form-items .zip-code-result-group .zip-code-details {
+.zip-code-form-items .zip-code-result-group .zip-code-info {
   width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-flow: column wrap;
 }
-.zip-code-form-items .zip-code-result-group .zip-code-details .zip-code-list {
+.zip-code-form-items .zip-code-result-group .zip-code-info .zip-code-details {
   width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-flow: column wrap;
 }
-.zip-code-form-items .zip-code-result-group .zip-code-details .zip-code-list span {
-  margin-bottom: 50px;
+.zip-code-form-items .zip-code-result-group .zip-code-info .zip-code-details span {
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
   flex-wrap: inherit;
   .zip-code-form-group {
     flex-wrap: inherit;
@@ -102,6 +102,7 @@ h1 {
   }
   .zip-code-result-group .zip-code-map iframe {
     flex-wrap: inherit;
+    margin-bottom: 20px;
   }
   .zip-code-result-group .zip-code-info {
     flex-wrap: inherit;
@@ -113,5 +114,6 @@ h1 {
   }
   .zip-code-result-group .zip-code-info .zip-code-details span {
     flex-wrap: inherit;
+    margin-bottom: 20px;
   }
 }

@@ -67,19 +67,19 @@ h1 {
     .zip-code-result-group {
 
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         display: flex;
         flex-flow: row wrap;
 
         .zip-code-map {
-            margin-right: 20px;
+            margin-right: 10px auto;
 
             iframe {
                 width: 100%;
             }
         }
 
-        .zip-code-details {
+        .zip-code-info {
 
             width: 100%;
             align-items: center;
@@ -87,7 +87,7 @@ h1 {
             display: flex;
             flex-flow: column wrap;
 
-            .zip-code-list {
+            .zip-code-details {
                 width: 100%;
                 align-items: center;
                 justify-content: center;
@@ -95,14 +95,15 @@ h1 {
                 flex-flow: column wrap;
 
                 span {
-                    margin-bottom: 50px;
+                    margin-bottom: 20px;
                 }
             }
         }
 
     }    
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 720px) {
 
     flex-wrap: inherit;
 
@@ -131,6 +132,7 @@ h1 {
 
             iframe {
                 flex-wrap: inherit;
+                margin-bottom: 20px;
             }
         }
 
@@ -144,6 +146,7 @@ h1 {
 
                 span {
                     flex-wrap: inherit;
+                    margin-bottom: 20px;
                 }
             }
         }
