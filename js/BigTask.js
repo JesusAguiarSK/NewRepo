@@ -10,19 +10,6 @@ function getData(url, cb) {
 
 getData(address, (data) => console.log({ data }))
 
-
-
-// fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {
-//   mode: 'cors', 
-//   method: 'GET', 
-//   headers: {'Content-Type': 'application/json'},
-//   // body: JSON.stringify({})
-// })
-//   .then(res => {return res.json()})
-//   .then(data => console.log(data))
-//   .catch(error => console.log('ERROR'));
-
-
 // set a default value for all the target classes in the html. 
 
 // let geoArrayDefault = geoArray.method to extract the below values.
