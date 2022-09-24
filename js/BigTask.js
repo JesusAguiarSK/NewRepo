@@ -7,16 +7,90 @@ var geoArray = [];
 //   // .then(data => geoArray.push(data))
 //   .catch(error => console.log('ERROR'));
 
-fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {
-  mode: 'cors', 
-  method: 'GET', 
-  headers: {'Content-Type': 'application/json'},
-  // body: JSON.stringify({})
-})
-  .then(res => {return res.json()})
-  .then(data => console.log(data))
-  .catch(error => console.log('ERROR'));
+// fetch( 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', {
+//   mode: 'cors', 
+//   method: 'GET', 
+//   headers: {'Content-Type': 'application/json'},
+//   // body: JSON.stringify({})
+// })
+//   .then(res => {return res.json()})
+//   .then(data => console.log(data))
+//   .catch(error => console.log('ERROR'));
 
+
+// Callback
+
+// function getData(url, cb) {
+//   fetch('https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060')
+//     .then(response => response.json())
+//     .then(result => cb(result));
+// }
+
+// getData('https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060', (data) => console.log({ data }))
+
+// ///*///Async/Await
+
+// My function
+
+// const myfunction = async function(x, y) {
+//   return [
+//     x,
+//     y,
+//   ];
+// }
+
+// // Start function
+// const start = async function(a, b) {
+//   const result = await myfunction('test', 'test');
+  
+//   console.log(result);
+// }
+
+// // Call start
+// start();
+
+
+
+// ////////////////
+
+async function getData(url) {
+  fetch('https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060');
+  
+}
+
+// Here we wait for the myfunction to finish
+// and then returns a promise that'll be waited for aswell
+// It's useless to wait the myfunction to finish before to return
+// we can simply returns a promise that will be resolved later
+
+// Also point that we don't use async keyword on the function because
+// we can simply returns the promise returned by myfunction
+function start() {
+  return getData();
+}
+
+// Call start
+(async() => {
+  console.log('before start');
+
+  await start();
+  
+  console.log('after start');
+})();
+
+
+///////////////////
+
+
+// async function getData(url) {
+//   const response = await fetch('https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060');
+
+//   return response.json();
+// };
+
+// const data = await getData('https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060');
+
+// console.log({ data })
 
 // console.log(geoArray);
 
