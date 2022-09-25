@@ -18,6 +18,7 @@ fetch(url).then(
       ).then(
         function(json){
           jsondata = json;
+          console.log(jsondata)
         }
       )
 
