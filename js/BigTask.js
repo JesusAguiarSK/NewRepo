@@ -2,20 +2,21 @@
 
 var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060';
 
-function getData(url, cb) {
-  fetch(address)
-    .then(response => {return response.json()})
-    .then(result => cb(result))
-    .catch(error => console.log('ERROR'))
-}
-
-This below gets the data printed to console
-// getData(address, (data) => console.log({ data }))
-
 //I'm trying the below to save the data to a variable for further manipulation'
-var objectFetched = getData(address, (data) => ({ data }))
 
-console.log(objectFetched)
+let geoGlobal;
+
+const getData = async () => {
+  const response = await fetch(address);
+  const data = await response.json();
+  geoGlobal = data;
+  return data;
+};
+
+(async () => {
+  await getData();
+  console.log(geoGlobal);
+})();
 
 // set a default value for all the target classes in the html. 
 
