@@ -2,26 +2,17 @@
 
 var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060';
 
-// function getData(url, cb) {
-//   fetch(address)
-//     .then(response => response.json())
-//     .then(result => cb(result))
-//     .catch(error => console.log('ERROR'))
-// }
+function getData(url, cb) {
+  fetch(address)
+    .then(response => response.json())
+    .then(result => cb(result))
+    .catch(error => console.log('ERROR'))
+}
 
-// getData(address, (data) => console.log({ data }))
+getData(address, (data) => console.log({ data }))
 
-///////////////////////////
+console.log(data)
 
-let jsondata;    
-fetch(address).then(
-        function(u){ return u.json();}
-      ).then(
-        function(json){
-          jsondata = json;
-          console.log(jsondata)
-        }
-      )
 // set a default value for all the target classes in the html. 
 
 /////////////////
