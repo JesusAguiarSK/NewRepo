@@ -2,9 +2,9 @@
 
 var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060';
 
-//I'm trying the below to save the data to a variable for further manipulation'
+// //I'm trying the below to save the data to a variable for further manipulation'
 
-let geoGlobal;
+// let geoGlobal;
 
 const getData = async () => {
   const response = await fetch(address);
@@ -24,24 +24,25 @@ const getData = async () => {
 
 // The geoGlobal has this structure: 
 
-geoGlobal = {query: {...},
-             results: {
-              1060: {
-                0: {
-                  city: ,
-                  country_code: ,
-                  state: ,
-                  latitue: ,
-                  longitude  
-                },
-                1: {},
-                2: {}
-                .
-                .
-              }
-             }
-}
-
+// geoGlobal = {query: {...},
+//              results: {
+//               1060: {
+//                 4: {
+//                   street: 'Brauergasse 5'  
+//                   city: "Wien, Mariahilf",
+//                   country_code: "AT",
+//                   state: "Wien",
+//                   latitude: "48.19520000"
+//                   longitude: "16.35030000",
+//                   iframe: https://i.pinimg.com/originals/eb/4a/22/eb4a22513af0fc4e427b47307a11189c.jpg
+//                 },
+//                 1: {},
+//                 2: {}
+//                 .
+//                 .
+//               }
+//              }
+// }
 
 
 /////////////////
