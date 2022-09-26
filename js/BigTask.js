@@ -22,6 +22,7 @@ fetch(address).then(
           console.log(jsondata)
         }
       )
+      
 // set a default value for all the target classes in the html. 
 
 /////////////////
