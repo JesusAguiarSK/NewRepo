@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Big Task</title>
+
+	<link rel="icon" type="image/x-icon" href="images/SKeepLogo.ico">
+
+    <link rel="stylesheet" type="text/css" href="./css/BigTaskReview.css">
+</head>
+<body>
+	
+	<header>
+		<div class="site-title">
+			<h1>Big Task</h1>
+		</div>
+
+	</header>
+
+<div class="zip-code-form-items">
+	<div class="zip-code-form-group">
+		<form class="zip-code-form">
+
+			<div class="zip-code-box">
+		        <input class='search' type="text" id="
+		        zip-code" placeholder="Enter zip code" />
+		        <!-- get from zip -->
+			</div>
+
+
+			<div class="zip-code-button-group">
+	<!-- 			Needs to be the same page
+	 -->			<button type="submit" formmethod="get" form="zip-code-form" id=button-group-box>Get Information</button>
+	    	</div>
+		</form>
+	</div>    
+	        <!-- Submit event, to ge the API thing -->
+	<!--         https://ipstack.com/  -->
+	<!-- fetch , $.ajax({..})  $.get|post() -->
+
+	<div class="zip-code-result-group">
+	<!-- 	display on same page -->
+		<div class="zip-code-map">
+			<iframe src="https://i.pinimg.com/originals/eb/4a/22/eb4a22513af0fc4e427b47307a11189c.jpg" title="zip-code-map-title" >
+	<!-- 			renderend with default place -->
+				
+			</iframe>
+		</div>
+
+		<div class="zip-code-info">
+			<div class="zip-code-details">
+				<span class="Street">Street:Brauergasse 5</span>
+					<!-- No idea -->
+				<span class="City">City: Mariahilf</span>
+					<!-- city: -->
+				<span class="State">State: Wien</span>
+					<!-- region_name: -->
+				<span class="Country">Country: Austria</span>
+					<!-- country_name: -->
+			</div>
+		</div>	
+</div>
+
+	<script type="text/javascript" src="./js/BigTaskReview.js"></script>
+</body>
+</html>

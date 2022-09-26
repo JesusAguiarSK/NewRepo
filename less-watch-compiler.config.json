@@ -1,5 +1,5 @@
 {
     "watchFolder": "less",
     "outputFolder": "css",
-    "mainFile": "BigTask.less"
+    "mainFile": "BigTaskReview.less"
 }
