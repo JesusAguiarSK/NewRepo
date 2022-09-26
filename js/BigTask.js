@@ -23,7 +23,23 @@ const getData = async () => {
 /////////////////
 //Extract values
 
-
+geoGlobal = {query: {...},
+             results: {
+              1060: {
+                0: {
+                  city: ,
+                  country_code: ,
+                  state: ,
+                  latitue: ,
+                  longitude  
+                },
+                1: {},
+                2: {}
+                .
+                .
+              }
+             }
+}
 
 
 
