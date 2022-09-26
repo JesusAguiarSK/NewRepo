@@ -4,14 +4,18 @@ var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11
 
 function getData(url, cb) {
   fetch(address)
-    .then(response => response.json())
+    .then(response => {return response.json()})
     .then(result => cb(result))
     .catch(error => console.log('ERROR'))
 }
 
-getData(address, (data) => console.log({ data }))
+This below gets the data printed to console
+// getData(address, (data) => console.log({ data }))
 
-console.log(data)
+//I'm trying the below to save the data to a variable for further manipulation'
+var objectFetched = getData(address, (data) => ({ data }))
+
+console.log(objectFetched)
 
 // set a default value for all the target classes in the html. 
 
