@@ -1,62 +1,41 @@
-// Callback
+//Fetch url to json
 
 var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060';
 
 // function getData(url, cb) {
 //   fetch(address)
 //     .then(response => response.json())
-//     .then(result => cb(result));
+//     .then(result => cb(result))
+//     .catch(error => console.log('ERROR'))
 // }
 
 // getData(address, (data) => console.log({ data }))
 
-//////////////////////////////////
-const myfunction = async function(url) {
-  const response = fetch(address);
-  return response.json;
-}
+///////////////////////////
 
-// Start function
-const start = async function(url) {
-  const result = await myfunction(address);
-  
-  console.log(result);
-}
-
-// Call start
-start(address);
-//////////////////////////////////
-
-
-// async function getData(url) {
-//   const response = await fetch(url);
-
-//   return response.json();
-// }
-
-// const data = await getData(url);
-
-// console.log({ data })
-
-//////////////////////////////////
-
-// const myfunction = async function(x, y) {
-//   return [x,y];
-// }
-
-// // Start function
-// const start = async function(a, b) {
-//   const result = await myfunction('test', 'test');
-  
-//   console.log(result);
-// }
-
-// // Call start
-// start();
-
+let jsondata;    
+fetch(address).then(
+        function(u){ return u.json();}
+      ).then(
+        function(json){
+          jsondata = json;
+          console.log(jsondata)
+        }
+      )
 // set a default value for all the target classes in the html. 
 
-// let geoArrayDefault = geoArray.method to extract the below values.
+/////////////////
+//Extract values
+
+
+
+
+
+/////////////////
+//Paste them to the html
+
+
+// var geoObjectDefault = geoArray.method to extract the below values.
       //Information
         // Street,
         // city:
@@ -76,7 +55,7 @@ start(address);
 
 //     if valid
 
-//       // var geoArrayFilter = geoArray.method to extract the below values.
+//       // var geoObjectFilter = geoObjectDefault.method to extract the below values.
 
 //       //Information
 //         // Street,
