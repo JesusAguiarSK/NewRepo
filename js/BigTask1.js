@@ -5,7 +5,8 @@ var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11
 function getData(url, cb) {
   fetch(address)
     .then(response => response.json())
-    .then(result => cb(result));
+    .then(result => cb(result))
+    .catch(error => console.log('ERROR'))
 }
 
 getData(address, (data) => console.log({ data }))
