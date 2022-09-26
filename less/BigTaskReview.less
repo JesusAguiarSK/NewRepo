@@ -8,7 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #046ab5;
+    flex-flow: column wrap;
+    margin-bottom: 20px;
+
+    h1 {
+        color: #046ab5;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: justify;
+    }
 }
 
 .zip-code-form-items{
@@ -33,16 +43,24 @@
                 align-items: center;
                 flex-flow: column wrap;
                 margin-bottom: 20px;
-                // min-height: 200px;
-                // background-color: #fff;
-                // box-shadow: 3px 3px 10px #00000030;
 
-                .zip-code-title {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-flow: column wrap;
+                .zip-code-search {
+
+                    height: 40px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: justify;
+                    color: #000;
+                    background-color: #fff;
+                    border: 1px solid #0067b8;
+                    transition: padding .4s ease;
+                    text-indent: 10px;
+                    border-radius: 7px;
                     margin-bottom: 20px;
+                    border: 1px solid #0067b8;
+                    border-radius: 7px;
+                    font-size: 12px;
+
                 }
 
             }
@@ -53,14 +71,28 @@
                 justify-content: center;
                 align-items: center;
                 flex-flow: column wrap;
-                margin-bottom: 20px;
-                // min-height: 200px;
-                // background-color: #fff;
-                box-shadow: 3px 3px 10px #00000030;
+                margin-bottom: 40px;
+                border-radius: 7px;
 
-                #button-group-box {
+
+                .button-group-box {
                     
-                    /*style of button*/
+                    height: 40px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: justify;
+                    color: #000;
+                    background-color: #fff;
+                    border: 1px solid #0067b8;
+                    transition: padding .4s ease;
+                    text-indent: 10px -10px;
+                    outline: none;
+                    border-radius: 7px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #046ab5;
+                    }
                 }
             }
         }

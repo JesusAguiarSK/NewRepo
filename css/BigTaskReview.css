@@ -7,7 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+}
+.site-title h1 {
   color: #046ab5;
+}
+.site-title p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
 }
 .zip-code-form-items .zip-code-form-group {
   align-items: center;
@@ -30,23 +39,43 @@
   flex-flow: column wrap;
   margin-bottom: 20px;
 }
-.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-box .zip-code-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-box .zip-code-search {
+  height: 40px;
+  font-weight: 400;
+  text-align: justify;
+  color: #000;
+  background-color: #fff;
+  transition: padding 0.4s ease;
+  text-indent: 10px;
   margin-bottom: 20px;
+  border: 1px solid #0067b8;
+  border-radius: 7px;
+  font-size: 12px;
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-bottom: 20px;
-  box-shadow: 3px 3px 10px #00000030;
+  margin-bottom: 40px;
+  border-radius: 7px;
 }
-.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group #button-group-box {
-  /*style of button*/
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #0067b8;
+  transition: padding 0.4s ease;
+  text-indent: 10px -10px;
+  outline: none;
+  border-radius: 7px;
+}
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box:hover {
+  cursor: pointer;
+  color: #046ab5;
 }
 .zip-code-form-items .zip-code-result-group {
   align-items: center;
