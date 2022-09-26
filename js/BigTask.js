@@ -18,10 +18,11 @@ const getData = async () => {
   console.log(geoGlobal);
 })();
 
-// set a default value for all the target classes in the html. 
 
 /////////////////
-//Extract values
+// Set a default value for all the target classes in the html. 
+
+// The geoGlobal has this structure: 
 
 geoGlobal = {query: {...},
              results: {
