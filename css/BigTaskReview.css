@@ -14,7 +14,7 @@
   color: #83580b;
 }
 .site-title p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-align: justify;
 }
@@ -41,12 +41,12 @@
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-box .zip-code-search {
   height: 40px;
+  font-size: 13px;
   font-weight: 400;
   text-align: justify;
   color: #000;
   background-color: #fff;
   border: 1px solid #83580b;
-  transition: padding 0.4s ease;
   text-indent: 10px;
   margin-bottom: 20px;
   border-radius: 7px;
@@ -85,6 +85,7 @@
 .zip-code-form-items .zip-code-result-group .zip-code-map {
   max-width: 100%;
   max-height: 100%;
+  margin: 20px;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map iframe {
   display: block;
@@ -99,47 +100,25 @@
 }
 .zip-code-form-items .zip-code-result-group .zip-code-info span {
   margin: 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-align: justify;
 }
-/*This is the start of a @media*/
-@media screen and (max-width: 720px) {
-  flex-wrap: inherit;
-  .zip-code-form-group {
-    flex-wrap: inherit;
-  }
-  .zip-code-form-group .zip-code-form {
-    flex-wrap: inherit;
-  }
-  .zip-code-form-group .zip-code-form .zip-code-box {
-    flex-wrap: inherit;
-    width: 100%;
-  }
-  .zip-code-form-group .zip-code-form .zip-code-button-group {
-    flex-wrap: inherit;
-  }
-  .zip-code-result-group {
-    flex-wrap: inherit;
-  }
-  .zip-code-result-group .zip-code-map {
-    flex-wrap: inherit;
-    align-items: center;
-  }
-  .zip-code-result-group .zip-code-map iframe {
-    flex-wrap: inherit;
-    margin-bottom: 20px;
-  }
-  .zip-code-result-group .zip-code-info {
-    flex-wrap: inherit;
-    align-items: center;
-  }
-  .zip-code-result-group .zip-code-info .zip-code-details {
-    flex-wrap: inherit;
-    align-items: center;
-  }
-  .zip-code-result-group .zip-code-info .zip-code-details span {
-    flex-wrap: inherit;
-    margin-bottom: 20px;
-  }
+.footer-content {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background: #fde994;
 }
+.footer-content span {
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer-content span .terms-of-service:hover {
+  cursor: pointer;
+  color: #83580b;
+}
+/*This is the start of a @media*/

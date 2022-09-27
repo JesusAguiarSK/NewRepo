@@ -15,7 +15,7 @@
         color: #83580b;
     }
     p {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         text-align: justify;
     }
@@ -47,13 +47,13 @@
                 .zip-code-search {
 
                     height: 40px;
-                    font-size: 12px;
+                    font-size: 13px;
                     font-weight: 400;
                     text-align: justify;
                     color: #000;
                     background-color: #fff;
                     border: 1px solid #83580b;
-                    transition: padding .4s ease;
+                    // transition: padding .4s ease;
                     text-indent: 10px;
                     border-radius: 7px;
                     margin-bottom: 20px;
@@ -107,6 +107,7 @@
 
             max-width: 100%;
             max-height: 100%;
+            margin: 20px;
 
 
             iframe {
@@ -125,7 +126,7 @@
 
             span {
                 margin: 15px;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 400;
                 text-align: justify;
 
@@ -134,56 +135,80 @@
     } 
 }    
 
+.footer-content {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background: #fde994;
+
+    span {
+        
+        margin: 10px;
+        font-size: 12px;
+        font-weight: 400;
+
+        .terms-of-service {
+
+            &:hover {
+            cursor: pointer;
+            color: #83580b;
+
+            }
+        }
+    }
+}
 
 /*This is the start of a @media*/
 
-@media screen and (max-width: 720px) {
+// @media screen and (max-width: 720px) {
 
-    flex-wrap: inherit;
+//     flex-wrap: inherit;
 
-    .zip-code-form-group {
-        flex-wrap: inherit;
+//     .zip-code-form-group {
+//         flex-wrap: inherit;
         
-        .zip-code-form {
-            flex-wrap: inherit;
+//         .zip-code-form {
+//             flex-wrap: inherit;
 
-            .zip-code-box {
-                flex-wrap: inherit;
-                width: 100%;
-            }
-            .zip-code-button-group {
-                flex-wrap: inherit;
+//             .zip-code-box {
+//                 flex-wrap: inherit;
+//                 width: 100%;
+//             }
+//             .zip-code-button-group {
+//                 flex-wrap: inherit;
 
-            }
-        }
-    }
-    .zip-code-result-group {
-        flex-wrap: inherit;
+//             }
+//         }
+//     }
+//     .zip-code-result-group {
+//         flex-wrap: inherit;
 
-        .zip-code-map {
-            flex-wrap: inherit;
-            align-items: center;
+//         .zip-code-map {
+//             flex-wrap: inherit;
+//             align-items: center;
 
-            iframe {
-                flex-wrap: inherit;
-                margin-bottom: 20px;
-            }
-        }
+//             iframe {
+//                 flex-wrap: inherit;
+//                 margin-bottom: 20px;
+//             }
+//         }
 
-        .zip-code-info {
-            flex-wrap: inherit;
-            align-items: center;
+//         .zip-code-info {
+//             flex-wrap: inherit;
+//             align-items: center;
 
-            .zip-code-details {
-                flex-wrap: inherit;
-                align-items: center;
+//             .zip-code-details {
+//                 flex-wrap: inherit;
+//                 align-items: center;
 
-                span {
-                    flex-wrap: inherit;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
+//                 span {
+//                     flex-wrap: inherit;
+//                     margin-bottom: 20px;
+//                 }
+//             }
+//         }
+//     }
 
-}
+// }
