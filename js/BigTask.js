@@ -20,6 +20,29 @@ const getData = async () => {
 
 
 /////////////////
+
+document.getElementByClassName
+
+
+// Selecting the iframe element
+var frame = document.getElementsByClassName("iframe");
+  
+// Adjusting the iframe height onload event
+frame.onload = function()
+// function execute while load the iframe
+{
+  // set the height of the iframe as 
+  // the height of the iframe content
+  frame.style.height = 640;
+  frame.contentWindow.document.body.scrollHeight + 'px';
+   
+
+ // set the width of the iframe as the 
+ // width of the iframe content
+ frame.style.width  = 640;
+  frame.contentWindow.document.body.scrollWidth+'px';
+      
+}
 // Set a default value for all the target classes in the html. 
 
 // The geoGlobal has this structure: 

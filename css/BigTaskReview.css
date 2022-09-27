@@ -74,7 +74,7 @@
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box:hover {
   cursor: pointer;
-  color: #046ab5;
+  color: #83580b;
 }
 .zip-code-form-items .zip-code-result-group {
   align-items: center;
@@ -85,11 +85,12 @@
 .zip-code-form-items .zip-code-result-group .zip-code-map {
   max-width: 100%;
   max-height: 100%;
-  margin: 20px;
+  display: flex;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map iframe {
-  display: block;
   width: 100%;
+  border: none;
+  margin: auto;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-info {
   align-items: flex-start;
@@ -108,8 +109,8 @@
   margin-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
   background: #fde994;
 }
 .footer-content span {
@@ -117,7 +118,7 @@
   font-size: 12px;
   font-weight: 400;
 }
-.footer-content span .terms-of-service:hover {
+.footer-content span.terms-of-service:hover {
   cursor: pointer;
   color: #83580b;
 }
