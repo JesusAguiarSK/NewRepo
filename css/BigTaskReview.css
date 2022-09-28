@@ -42,7 +42,7 @@ header {
   flex-flow: column wrap;
   margin-bottom: 20px;
 }
-.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-box .zip-code-search {
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-box #zip-code-search {
   height: 40px;
   font-size: 13px;
   font-weight: 400;
