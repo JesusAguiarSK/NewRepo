@@ -2,9 +2,7 @@
 
 var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060';
 
-// //I'm trying the below to save the data to a variable for further manipulation'
-
-// let geoGlobal;
+let geoGlobal;
 
 const getData = async () => {
   const response = await fetch(address);
@@ -20,6 +18,9 @@ const getData = async () => {
 
 
 /////////////////
+
+//This makes the iframe show up as its original size
+
 
 document.getElementByClassName
 
@@ -43,6 +44,28 @@ frame.onload = function()
   frame.contentWindow.document.body.scrollWidth+'px';
       
 }
+
+//The below allows to 1) clear up field after submit, and that
+//the page remains the same.
+
+const btn = document.getElementById('zip-code-button');
+
+btn.addEventListener('click', function handleClick(event) {
+  // The below prevents a page reload
+  event.preventDefault();
+
+  const buttonInput = document.getElementById('zip-code-search');
+
+  // Send value to server
+  console.log(buttonInput.value);
+
+  // Clear input field <<< Here I need to put the statement to check
+  //if a zip code is valid. 
+  buttonInput.value = '';
+});
+
+/////////////////
+
 // Set a default value for all the target classes in the html. 
 
 // The geoGlobal has this structure: 
@@ -67,8 +90,8 @@ frame.onload = function()
 //              }
 // }
 
-
 /////////////////
+
 //Paste them to the html
 
 
@@ -86,8 +109,6 @@ frame.onload = function()
 
 //Target each span class with the array's information.
 
-// document.getElementById('button-group-box').addEventListener('click', function(event) {
-
 // Check if post code is valid
 
 //     if valid
@@ -101,8 +122,3 @@ frame.onload = function()
 //         // Country
 //       //link to map
 //         //map
-
-//     else
-//       document.getElementById('zip-code').addEventListener('click', function (event) {
-//         //reset content of zip code
-//       });
