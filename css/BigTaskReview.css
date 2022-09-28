@@ -86,16 +86,17 @@ header {
   flex-flow: row wrap;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map {
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
+  overflow: hidden;
+  width: 500px;
+  /* randomly selected*/
+  height: 500px;
+  box-shadow: 3px 3px 10px #00000030;
+  margin-bottom: 20px;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map iframe {
   width: 100%;
+  height: 100%;
   border: none;
-  box-shadow: 20px #00000030;
-  margin: auto;
-  margin-bottom: 20px;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-info {
   align-items: flex-start;
