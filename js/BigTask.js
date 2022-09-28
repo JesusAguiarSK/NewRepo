@@ -16,6 +16,18 @@ const getData = async () => {
   console.log(geoGlobal);
 })();
 
+////////////////////////////////////////
+
+
+// function setIframeSize(iframe) {
+//     var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+//     var iframeBody;
+//     if (iframeDocument) {
+//         iframeBody = iframeDocument.querySelector('body');
+//         iframeBody.style.overflow = 'hidden';
+//     }
+// }
+// setIframeSize()
 
 /////////////////
 

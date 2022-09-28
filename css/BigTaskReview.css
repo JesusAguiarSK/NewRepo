@@ -87,9 +87,8 @@ header {
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map {
   overflow: hidden;
-  width: 500px;
-  /* randomly selected*/
-  height: 500px;
+  width: 375px;
+  height: 667px;
   box-shadow: 3px 3px 10px #00000030;
   margin-bottom: 20px;
 }
