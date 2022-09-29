@@ -17,6 +17,7 @@ header {
 
     h1 {
         color: #83580b;
+
     }
     p {
         font-size: 14px;
@@ -50,6 +51,7 @@ header {
 
                 #zip-code-search {
 
+                    width: 100%;
                     height: 40px;
                     font-size: 13px;
                     font-weight: 400;
@@ -99,31 +101,18 @@ header {
         }
     }
     .zip-code-result-group {
-
         align-items: center;
         justify-content: space-evenly;
         display: flex;
         flex-flow: row wrap;
 
         .zip-code-map {
-            // max-width: 500px;
-            // max-height: 500px;
-            // position: relative;
-            overflow: hidden;
-            // width: 100%;
-            // padding-top: 56.25%;
             width: 375px;
             height: 667px; 
             box-shadow: 3px 3px 10px #00000030;
             margin-bottom: 20px;
 
             iframe {
-                // position: absolute;
-                // top: 0;
-                // left: 0;
-                // bottom: 0;
-                // right: 0;
-    
                 width: 100%;
                 height: 100%;
                 border: none;
@@ -159,7 +148,6 @@ header {
     background: #fde994;
 
     span {
-
         margin: 10px;
         font-size: 12px;
         font-weight: 400;
@@ -174,75 +162,3 @@ header {
         }
     }
 }
-
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     box-sizing: border-box;
-//     padding: 0;
-//     border: none;
-//     margin: auto;
-//     display: block;
-//     width: 0;
-//     height: 0;
-//     min-width: 100%;
-//     max-width: 100%;
-//     min-height: 100%;
-//     max-height: 100%;
-
-
-
-/*This is the start of a @media*/
-
-// @media screen and (max-width: 720px) {
-
-//     flex-wrap: inherit;
-
-//     .zip-code-form-group {
-//         flex-wrap: inherit;
-        
-//         .zip-code-form {
-//             flex-wrap: inherit;
-
-//             .zip-code-box {
-//                 flex-wrap: inherit;
-//                 width: 100%;
-//             }
-//             .zip-code-button-group {
-//                 flex-wrap: inherit;
-
-//             }
-//         }
-//     }
-//     .zip-code-result-group {
-//         flex-wrap: inherit;
-
-//         .zip-code-map {
-//             flex-wrap: inherit;
-//             align-items: center;
-
-//             iframe {
-//                 flex-wrap: inherit;
-//                 margin-bottom: 20px;
-//             }
-//         }
-
-//         .zip-code-info {
-//             flex-wrap: inherit;
-//             align-items: center;
-
-//             .zip-code-details {
-//                 flex-wrap: inherit;
-//                 align-items: center;
-
-//                 span {
-//                     flex-wrap: inherit;
-//                     margin-bottom: 20px;
-//                 }
-//             }
-//         }
-//     }
-
-// }
