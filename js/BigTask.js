@@ -16,47 +16,6 @@ const getData = async () => {
   console.log(geoGlobal);
 })();
 
-////////////////////////////////////////
-
-
-// function setIframeSize(iframe) {
-//     var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-//     var iframeBody;
-//     if (iframeDocument) {
-//         iframeBody = iframeDocument.querySelector('body');
-//         iframeBody.style.overflow = 'hidden';
-//     }
-// }
-// setIframeSize()
-
-/////////////////
-
-//This makes the iframe show up as its original size
-
-
-// document.getElementByClassName
-
-
-// // Selecting the iframe element
-// var frame = document.getElementsByClassName("iframe");
-  
-// // Adjusting the iframe height onload event
-// frame.onload = function()
-// // function execute while load the iframe
-// {
-//   // set the height of the iframe as 
-//   // the height of the iframe content
-//   frame.style.height = 640;
-//   frame.contentWindow.document.body.scrollHeight + 'px';
-   
-
-//  // set the width of the iframe as the 
-//  // width of the iframe content
-//  frame.style.width  = 640;
-//   frame.contentWindow.document.body.scrollWidth+'px';
-      
-// }
-
 //The below allows to 1) clear up field after submit, and that
 //the page remains the same.
 
@@ -107,7 +66,7 @@ btn.addEventListener('click', function handleClick(event) {
 //Paste them to the html
 
 
-// var geoObjectDefault = geoArray.method to extract the below values.
+// var geoObjectDefault = geoGlobal.method to extract the below values.
       //Information
         // Street,
         // city:
