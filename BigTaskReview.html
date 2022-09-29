@@ -17,54 +17,55 @@
 			<h1>Geolocator</h1>
 			<p>Get information of your favourites places with just a zip! </p>
 		</div>
-
 	</header>
 
-<div class="zip-code-form-items">
-	<div class="zip-code-form-group">
-		<form class="zip-code-form">
+	<div class="zip-code-form-items">
+		<div class="zip-code-form-group">
+			<form class="zip-code-form">
 
-			<div class="zip-code-box">
-		        <input id='zip-code-search' type="text" placeholder="Enter zip code" />
-		        <!-- get from zip -->
+				<div class="zip-code-box">
+			        <input id='zip-code-search' type="text" placeholder="Enter zip code" />
+			        <!-- get from zip -->
+				</div>
+
+
+				<div class="zip-code-button-group">
+
+					<button class= 'button-group-box' type="submit" formmethod="get" form="zip-code-form" id="zip-code-button">Get Information</button>
+		    	</div>
+			</form>
+		</div>    
+		        <!-- Submit event, to get the information from the API -->
+
+		<div class="zip-code-result-group">
+			<div class="zip-code-map">
+				<iframe class="map-iframe" src="https://i.pinimg.com/originals/eb/4a/22/eb4a22513af0fc4e427b47307a11189c.jpg" title="zip-code-map-title" >
+					
+				</iframe>
 			</div>
 
-
-			<div class="zip-code-button-group">
-
-				<button class= 'button-group-box' type="submit" formmethod="get" form="zip-code-form" id="zip-code-button">Get Information</button>
-	    	</div>
-		</form>
-	</div>    
-	        <!-- Submit event, to get the information from the API -->
-
-	<div class="zip-code-result-group">
-		<div class="zip-code-map">
-			<iframe class="map-iframe" src="https://i.pinimg.com/originals/eb/4a/22/eb4a22513af0fc4e427b47307a11189c.jpg" title="zip-code-map-title" >
-				
-			</iframe>
+			<div class="zip-code-info">
+				<span class="Street"><strong>Street:</strong> Brauergasse 5</span>
+					<!-- No idea -->
+				<span class="City"><strong>City:</strong> Mariahilf</span>
+					<!-- city: -->
+				<span class="State"><strong>State:</strong> Wien</span>
+					<!-- region_name: -->
+				<span class="Country"><strong>Country:</strong> Austria</span>
+					<!-- country_name: -->
+			</div>	
 		</div>
-
-		<div class="zip-code-info">
-			<span class="Street"><strong>Street:</strong> Brauergasse 5</span>
-				<!-- No idea -->
-			<span class="City"><strong>City:</strong> Mariahilf</span>
-				<!-- city: -->
-			<span class="State"><strong>State:</strong> Wien</span>
-				<!-- region_name: -->
-			<span class="Country"><strong>Country:</strong> Austria</span>
-				<!-- country_name: -->
-		</div>	
-</div>
-
-<footer class="footer">
-	<div class="footer-content">
-		<span class="trademark">© Jesús Aguiar 2022 | All right reserved</span>
-		<span class="terms-of-service">Terms & Conditions</span>
-		<span class="email">j.aguiar@softwarekeep.com</span>		
 	</div>
 
-</footer>
+	<footer class="footer">
+		<div class="footer-content">
+			<span class="trademark">© Jesús Aguiar 2022 | All right reserved</span>
+			<span class="terms-of-service">Terms & Conditions</span>
+			<span class="email">j.aguiar@softwarekeep.com</span>		
+		</div>
+	</footer>
+
 	<script type="text/javascript" src="./js/BigTask.js"></script>
+	
 </body>
 </html>
