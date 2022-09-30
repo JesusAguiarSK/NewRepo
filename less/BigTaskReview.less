@@ -5,7 +5,7 @@
 }
 
 header {
-    background: #fde994;
+    background: #e7eaf6;
 }
 
 .site-title {
@@ -16,7 +16,7 @@ header {
     margin-bottom: 20px;
 
     h1 {
-        color: #83580b;
+        color: #113f67;
 
     }
     p {
@@ -27,8 +27,24 @@ header {
 }
 
 .zip-code-form-items{
-    background: url('../images/word6.png') no-repeat;
-    background-size: contain;
+    // background: url('../images/world-background.png') no-repeat center;
+    // background-size: contain;
+
+    .zip-code-header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        background: url('../images/world-background.png') no-repeat center;
+        background-size: contain;
+
+        .zip-code-header-content {
+            text-align: justify;
+            width: 80px;
+        }
+
+    }
 
     .zip-code-form-group {
         align-items: center;
@@ -36,6 +52,7 @@ header {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
+        margin-bottom: 30px;
 
 
         .zip-code-form {
@@ -44,6 +61,7 @@ header {
             display: flex;
             flex-flow: column wrap;
             width: 100%;
+
 
             .zip-code-box {
                 display: flex;
@@ -61,7 +79,7 @@ header {
                     text-align: justify;
                     color: #000;
                     background-color: #fff;
-                    border: 1px solid #83580b;
+                    border: 1px solid #113f67;
                     text-indent: 10px;
                     border-radius: 7px;
                     margin-bottom: 20px;
@@ -90,14 +108,14 @@ header {
                     text-align: justify;
                     color: #000;
                     background-color: #fff;
-                    border: 1px solid #83580b;
+                    border: 1px solid #113f67;
                     text-indent: 10px -10px;
                     outline: none;
                     border-radius: 7px;
 
                     &:hover {
                         cursor: pointer;
-                        color: #83580b;
+                        color: #113f67;
                     }
                 }
             }
@@ -108,10 +126,13 @@ header {
         justify-content: space-evenly;
         display: flex;
         flex-flow: row wrap;
+        margin-bottom: 30px;
 
         .zip-code-map {
             // width: 100%;
-            // height: 100%; 
+            // height: 100%;
+            width: 320px;
+            height: 640px;  
             box-shadow: 3px 3px 10px #00000030;
             margin-bottom: 20px;
 
@@ -129,7 +150,9 @@ header {
             justify-content: flex-start;
             display: flex;
             flex-flow: column wrap;
-            // background: #fde994;
+            background: #e7eaf6;
+            border-top: 4px solid #113f67;
+
 
             span {
                 margin: 15px;
@@ -152,7 +175,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    background: #fde994;
+    background: #e7eaf6;
 
     span {
         margin: 10px;
@@ -163,7 +186,7 @@ header {
             &:hover {
 
                 cursor: pointer;
-                color: #83580b;
+                color: #113f67;
 
             }           
         }

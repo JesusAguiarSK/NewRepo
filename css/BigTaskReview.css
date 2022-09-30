@@ -4,7 +4,7 @@
   list-style-type: none;
 }
 header {
-  background: #fde994;
+  background: #e7eaf6;
 }
 .site-title {
   display: flex;
@@ -14,16 +14,25 @@ header {
   margin-bottom: 20px;
 }
 .site-title h1 {
-  color: #83580b;
+  color: #113f67;
 }
 .site-title p {
   font-size: 14px;
   font-weight: 400;
   text-align: justify;
 }
-.zip-code-form-items {
-  background: url('../images/word6.png') no-repeat;
+.zip-code-form-items .zip-code-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background: url('../images/world-background.png') no-repeat center;
   background-size: contain;
+}
+.zip-code-form-items .zip-code-header .zip-code-header-content {
+  text-align: justify;
+  width: 80px;
 }
 .zip-code-form-items .zip-code-form-group {
   align-items: center;
@@ -31,6 +40,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  margin-bottom: 30px;
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form {
   align-items: center;
@@ -54,7 +64,7 @@ header {
   text-align: justify;
   color: #000;
   background-color: #fff;
-  border: 1px solid #83580b;
+  border: 1px solid #113f67;
   text-indent: 10px;
   margin-bottom: 20px;
   border-radius: 7px;
@@ -75,22 +85,25 @@ header {
   text-align: justify;
   color: #000;
   background-color: #fff;
-  border: 1px solid #83580b;
+  border: 1px solid #113f67;
   text-indent: 10px -10px;
   outline: none;
   border-radius: 7px;
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box:hover {
   cursor: pointer;
-  color: #83580b;
+  color: #113f67;
 }
 .zip-code-form-items .zip-code-result-group {
   align-items: center;
   justify-content: space-evenly;
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 30px;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-map {
+  width: 320px;
+  height: 640px;
   box-shadow: 3px 3px 10px #00000030;
   margin-bottom: 20px;
 }
@@ -104,6 +117,8 @@ header {
   justify-content: flex-start;
   display: flex;
   flex-flow: column wrap;
+  background: #e7eaf6;
+  border-top: 4px solid #113f67;
 }
 .zip-code-form-items .zip-code-result-group .zip-code-info span {
   margin: 15px;
@@ -120,7 +135,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   flex-flow: row wrap;
-  background: #fde994;
+  background: #e7eaf6;
 }
 .footer-content span {
   margin: 10px;
@@ -129,5 +144,5 @@ header {
 }
 .footer-content span.terms-of-service:hover {
   cursor: pointer;
-  color: #83580b;
+  color: #113f67;
 }
