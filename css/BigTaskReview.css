@@ -66,6 +66,10 @@ header {
   text-indent: 10px;
   margin-bottom: 20px;
   border-radius: 7px;
+  transition: all 0.5s ease;
+}
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-box #zip-code-search:focus {
+  border: 3px solid #38598b;
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group {
   display: flex;
@@ -85,6 +89,12 @@ header {
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box:hover {
   cursor: pointer;
+}
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box:hover + .button-group-text {
+  color: #38598b;
+}
+.zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-text {
+  transition: all 0.5s ease;
 }
 .zip-code-form-items .zip-code-result-group {
   align-items: center;
@@ -133,6 +143,9 @@ header {
   margin: 10px;
   font-size: 18px;
   font-weight: 400;
+}
+.footer-content span.terms-of-service {
+  transition: all 0.5s ease;
 }
 .footer-content span.terms-of-service:hover {
   cursor: pointer;
