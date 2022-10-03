@@ -17,7 +17,7 @@ const getData = async () => {
   console.log(geoGlobal);
 })();
 
-//The below allows to 1) clear up field after submit, and that
+//The below allows to clear up field after submit if the zip code is invalid, and that
 //the page remains the same.
 
 const btn = document.getElementById('zip-code-button');
