@@ -1,3 +1,4 @@
+
 //Fetch url to json
 
 var address = 'https://app.zipcodebase.com/api/v1/search?apikey=24d96260-3a7b-11ed-a18a-bf519b68c32f&codes=1060';
@@ -27,12 +28,21 @@ btn.addEventListener('click', function handleClick(event) {
 
   const buttonInput = document.getElementById('zip-code-search');
 
-  // Send value to server
-  console.log(buttonInput.value);
+  //Let's consider this is jus US zip codes, which are 5 digit numbers or 
+  //5 digit numbers with a 4 digit number separated by a dash.
 
-  // Clear input field <<< Here I need to put the statement to check
-  //if a zip code is valid. 
-  buttonInput.value = '';
+
+  var isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(buttonInput.value);
+  console.log(isValidZip);
+
+  if (isValidZip == true) {
+    console.log(buttonInput.value);
+  } else {
+    buttonInput.value = '';
+    alert("Please enter a valid zip code");
+    console.log(buttonInput.value);
+  };
+
 });
 
 /////////////////
