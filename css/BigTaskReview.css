@@ -60,7 +60,7 @@ header {
   font-size: 18px;
   font-weight: 400;
   text-align: justify;
-  color: #38598b;
+  color: #000;
   background-color: #fff;
   border: 1px solid #113f67;
   text-indent: 10px;
@@ -78,21 +78,13 @@ header {
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box {
   height: 60px;
   width: 60px;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: justify;
-  color: #000;
-  background-color: #fff;
   border: none;
-  text-indent: 10px -10px;
   outline: none;
-  border-radius: 7px;
   background: url('../images/pointer4.png') no-repeat center;
   background-size: contain;
 }
 .zip-code-form-items .zip-code-form-group .zip-code-form .zip-code-button-group .button-group-box:hover {
   cursor: pointer;
-  color: #113f67;
 }
 .zip-code-form-items .zip-code-result-group {
   align-items: center;
