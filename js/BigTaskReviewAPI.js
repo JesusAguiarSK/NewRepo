@@ -26,6 +26,7 @@ btn.addEventListener('click', function handleClick(event) {
   // The below prevents a page reload
   event.preventDefault();
 
+  //Read the zipcode in the input
   let buttonInput = document.getElementById('zip-code-search');
 
   //Let's consider this is jus US zip codes, which are 5 digit numbers or 
@@ -37,6 +38,12 @@ btn.addEventListener('click', function handleClick(event) {
 
   if (isValidZip == true) {
     console.log(buttonInput.value);
+
+    //Change the iframe url query param &q=
+
+
+
+
   } else {
     buttonInput.value = '';
     alert("Please enter a valid zip code");
@@ -44,75 +51,3 @@ btn.addEventListener('click', function handleClick(event) {
   };
 
 });
-
-/////////////////
-
-//This gets the Google Maps iframe API
-
-/////////////////
-
-
-//Read the zipcode in the input
-
-
-
-//Change the iframe url query param &q=
-
-
-
-// Set a default value for all the target classes in the html. 
-
-// The geoGlobal has this structure: 
-
-// geoGlobal = {query: {...},
-//              results: {
-//               1060: {
-//                 4: {
-//                   street: 'Brauergasse 5'  
-//                   city: "Wien, Mariahilf",
-//                   country_code: "AT",
-//                   state: "Wien",
-//                   latitude: "48.19520000"
-//                   longitude: "16.35030000",
-//                   iframe: https://i.pinimg.com/originals/eb/4a/22/eb4a22513af0fc4e427b47307a11189c.jpg
-//                 },
-//                 1: {},
-//                 2: {}
-//                 .
-//                 .
-//               }
-//              }
-// }
-
-/////////////////
-
-//Paste them to the html
-
-
-// var geoObjectDefault = geoGlobal.method to extract the below values.
-      //Information
-        // Street,
-        // city:
-        // State
-        // country_code:
-      //link to map
-        //map
-
-//Paste the link to the map to the iframe, or do I need to use another API to extract the iframe (like
-//putting the latitude/longitude in google maps and pull out images?
-
-//Target each span class with the array's information.
-
-// Check if post code is valid
-
-//     if valid
-
-//       // var geoObjectFilter = geoObjectDefault.method to extract the below values.
-
-//       //Information
-//         // Street,
-//         // City,
-//         // State
-//         // Country
-//       //link to map
-//         //map
