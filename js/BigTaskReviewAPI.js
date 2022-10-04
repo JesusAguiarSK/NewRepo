@@ -26,7 +26,7 @@ btn.addEventListener('click', function handleClick(event) {
   //Get the default src so we can manipulate it later
 
   var srcDefaultZipCode = document.getElementById("map-iframe-id").src;
-  console.log(srcDefaultZipCode);
+  console.log(srcDefaultZipCode); 
 
   //Check if the zip code is valid
 
