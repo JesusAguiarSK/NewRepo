@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+
+	<link rel="icon" type="image/x-icon" href="images/SKeepLogo.ico">
+
+    <link rel="stylesheet" type="text/css" href="./css/BigTaskReviewAPI.css">
+</head>
+<body>
+	
+	<header class="header">
+		<div class="site-title">
+			<h1>Geolocator</h1>
+			<p>Get information of your favourites places with just a zip! </p>
+		</div>
+	</header>
+
+	<div class="zip-code-form-items">
+
+		<div class="zip-code-header">
+			<img src="images/world-background.png" class="zip-code-world-map">	
+		</div>
+
+		<div class="zip-code-form-group">
+			<form class="zip-code-form">
+
+				<div class="zip-code-box">
+			        <input id='zip-code-search' type="text" placeholder="Enter zip code" />
+			        <!-- get from zip -->
+				</div>
+
+
+				<div class="zip-code-button-group">
+
+					<button class= 'button-group-box' type="submit" formmethod="get" form="zip-code-form" id="zip-code-button"></button>
+					<span class="button-group-text">Get information</span>
+		    	</div>
+			</form>
+		</div>    
+		        <!-- Submit event, to get the information from the API -->
+
+		<div class="zip-code-result-group">
+			<div class="zip-code-map">
+				<iframe class="map-iframe" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDkYKcZi5xtbAJqkBBn6cXA25mxDf3sRZA&q=33166" title="zip-code-map-title" >
+					
+				</iframe>
+			</div>
+
+			<ul class="zip-code-info">
+				<li class="Street"><strong>Street:</strong>Brauergasse 5</li>
+				<li class="City"><strong>City:</strong>Mariahilf</li>
+				<li class="State"><strong>State:</strong></li>
+				<li class="Country"><strong>Country:</strong>Austria</li>
+			</ul>
+
+<!-- 			<div class="zip-code-info">
+				<span class="Street"><strong>Street:</strong> Brauergasse 5</span>
+					No idea
+				<span class="City"><strong>City:</strong> Mariahilf</span>
+					city:
+				<span class="State"><strong>State:</strong> Wien</span>
+					region_name:
+				<span class="Country"><strong>Country:</strong> Austria</span>
+					country_name: -->
+			</div>	
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<span class="trademark">&copy; Jesús Aguiar 2022 | All rights reserved</span>
+			<span class="terms-of-service">Terms & Conditions</span>
+			<span class="email">
+				<a href="mailto:j.aguiar@softwarekeep.com">j.aguiar@softwarekeep.com<a/>
+			</span>		
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="./js/BigTaskReviewAPI.js"></script>
+	
+</body>
+</html>
