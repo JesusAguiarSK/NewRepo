@@ -48,16 +48,18 @@ btn.addEventListener('click', function handleClick(event) {
     //From here I wanna extract the information from the iframe
 
 
-    let iframe = document.getElementById("map-iframe-id");
+    let iframeMap = document.getElementById("map-iframe-id");
 
-    let iWindow = iframe.contentWindow;
+    let iWindow = iframeMap.contentWindow;
+
     let iDocument = iWindow.document;
+    console.log(iDocument);
 
     // I wanna extract the place-name div, as it is the one that is throwing up the 
     //correct results in the Place ID API (online). 
 
-    let element = iDocument.querySelector('.place-name');
-    console.log(element);
+    // let element = iDocument.querySelector('.place-name');
+    // console.log(element);
 
   } else {
     buttonInput.value = '';
