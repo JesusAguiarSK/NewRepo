@@ -44,7 +44,9 @@ btn.addEventListener('click', function handleClick(event) {
 
     document.getElementById("map-iframe-id").src=srcStripZipCode;
 
+
     //From here I wanna extract the information from the iframe
+
 
     let iframe = document.getElementById("map-iframe-id");
 
@@ -52,7 +54,7 @@ btn.addEventListener('click', function handleClick(event) {
     let iDocument = iWindow.document;
 
     // I wanna extract the place-name div, as it is the one that is throwing up the 
-    //correct results in the Place ID API (online)
+    //correct results in the Place ID API (online). 
 
     let element = iDocument.querySelector('.place-name');
     console.log(element);
