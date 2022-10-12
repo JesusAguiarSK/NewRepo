@@ -1,0 +1,60 @@
+/** {
+    box-sizing: border-box;
+    font-family: Ubuntu,Segoe UI,Helvetica,Verdana;
+}
+*/
+
+h1 {
+
+	color: blue;
+}
+
+/*Setup all images so they're square*/
+
+img {
+	width: 300px;
+	height: 300px;
+	border-radius: 25px
+
+}
+
+/*Set the images list (container) in flex, with direction row, and wrap so
+they can shrink according to screen size
+*/
+.images {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*Set the list items so the text is on top of the image (working on this)*/
+
+.images li {
+	display: flex;
+	align-items: center;
+  	flex-direction: column;;
+/*  	justify-content: center;*/
+/*  	text-align: center;*/
+
+}
+
+/*This is the styling of the 'nested div approach'*/
+
+/*.picture {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.name {
+  align-items: center;
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  text-align: center;
+}
+*/
+
+
+
